@@ -1,0 +1,33 @@
+/* work1-3 */
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li + li {
+    border-left: 1px solid #2b2828;
+}
+
+@media screen and (max-width: 767px) {
+    /* 画面サイズ 767px以下になったらここに書いてあるcssが適用される */
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    li {
+        /* display: flex; */
+        justify-content: flex-start;
+        border-bottom: solid;
+        /* max-width: 767px; */
+        padding: 20px;
+    }
+}
