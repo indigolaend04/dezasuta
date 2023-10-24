@@ -1,5 +1,11 @@
 /* work1-3 */
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 ul {
     display: flex;
     justify-content: flex-end;
@@ -19,15 +25,22 @@ li + li {
 @media screen and (max-width: 767px) {
     /* 画面サイズ 767px以下になったらここに書いてあるcssが適用される */
 
+    header {
+        display: block;
+    }
     ul {
         display: flex;
         flex-direction: column;
+        padding: 0 16px;
     }
     li {
-        /* display: flex; */
         justify-content: flex-start;
         border-bottom: solid;
-        /* max-width: 767px; */
+
         padding: 20px;
+    }
+
+    li + li {
+        border-left: none;
     }
 }
