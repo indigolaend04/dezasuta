@@ -1,0 +1,36 @@
+/* work01 */
+body {
+    padding: 10px 30px;
+    height: 100vh;
+    background: #eeeeee;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 10px;
+    max-width: 960px;
+}
+
+h2 {
+    padding: 50px;
+    text-align: center;
+    color: #088272;
+}
+
+h3 {
+    border-left: 5px solid #088272; /*線の設定*/
+    padding: 2px 8px; /*  余白の設定 */
+    color: #088272;
+    /* padding-left: 10px; */
+}
+
+h3,
+p {
+    max-width: 330px;
+    background-color: white;
+    padding: 10px;
+}
