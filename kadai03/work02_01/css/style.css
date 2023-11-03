@@ -36,8 +36,8 @@ p {
 }
 
 /* work02 */
-@media screen and (max-width: 767px) {
-    /* 画面サイズ 767px以下になったらここに書いてあるcssが適用される */
+@media screen and (max-width: 400px) {
+    /* 画面サイズ 400px以下になったらここに書いてあるcssが適用される */
     header {
         display: block;
     }
