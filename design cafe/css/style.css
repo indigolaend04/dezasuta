@@ -1,0 +1,163 @@
+@charset "utf-8";
+body {
+    background-color: #e8d9bf;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7% 0 2.7%;
+}
+
+.logo img {
+    width: 226.76px;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 45px;
+}
+
+.header_nav li {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    width: 105px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 50vw;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.title {
+    padding-top: 330px;
+    text-align: center;
+}
+
+.title h3 {
+    padding-top: 116px;
+    line-height: 0.7;
+}
+
+.title h1 {
+    padding-top: 50px;
+    line-height: 1.2;
+    font-size: 60px;
+    font-family: 游明朝;
+    font-weight: normal;
+}
+
+.title p {
+    padding-top: 47px;
+    line-height: 0.9;
+    font-family: 游明朝;
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.ABOUT {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img {
+    width: 500px;
+    height: 560px;
+    padding-right: 40px;
+}
+
+#about-font img {
+    width: 272px;
+    height: 77px;
+}
+
+.about-text {
+    width: 430px;
+    padding-left: 40px;
+}
+
+.about-text h2 {
+    font-family: 游明朝;
+    font-weight: normal;
+    font-size: 44px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    font-family: 游明朝;
+    font-weight: normal;
+    font-size: 16px;
+}
+/* .ABOUT div {
+    display: flex;
+}
+.ABOUT img src {
+    width: 500px;
+    height: 560px;
+}
+
+.ABOUT img src {
+    width: 272px;
+    height: 77px;
+} */
+
+/* .ABOUT {
+    /* display: flex; */
+/* justify-content: center; */
+/* .ABOUT img src {
+    width: 500px;
+    height: 560px;
+}
+
+.ABOUT img src {
+    width: 272px;
+    height: 77px;
+   
+}
+
+.MENU img src_menu {
+    display: flex;
+    justify-content: center;
+}
+.MENU ul {
+    display: flex;
+    justify-content: center;
+}
+
+.GALLERY img src_gallery {
+    width: 173px;
+    height: 78px;
+}
+
+.GALLERY {
+    display: flex;
+    justify-content: center;
+}
+
+.EVENT img src_event {
+    width: 173px;
+    height: 78px;
+}
+
+.ACCESS img src_access {
+    width: 213px;
+    height: 78px;
+}
+
+.footer img src_designcafe {
+    width: 226px;
+    height: 50px;
+} */
