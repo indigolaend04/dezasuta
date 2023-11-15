@@ -44,5 +44,10 @@ ul {
 img {
     max-width: 100%;
     vertical-align: bottom;
-    border: none;
+    /* border: none; */
 }
+
+/*  仮 */
+/* .about-img {
+    border-bottom-right-radius: 30px;
+} */

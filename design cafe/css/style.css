@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 body {
     background-color: #e8d9bf;
 }
@@ -48,12 +49,12 @@ body {
 }
 
 .title h3 {
-    padding-top: 116px;
+    padding-top: 250px;
     line-height: 0.7;
 }
 
 .title h1 {
-    padding-top: 50px;
+    padding-top: 52px;
     line-height: 1.2;
     font-size: 60px;
     font-family: 游明朝;
@@ -61,7 +62,7 @@ body {
 }
 
 .title p {
-    padding-top: 47px;
+    padding-top: 20px;
     line-height: 0.9;
     font-family: 游明朝;
     font-weight: normal;
@@ -80,6 +81,7 @@ body {
     width: 500px;
     height: 560px;
     padding-right: 40px;
+    border-bottom-right-radius: 50px;
 }
 
 .about-font img {
@@ -123,6 +125,8 @@ body {
 .menu-font img {
     width: 151px;
     height: 78px;
+    display: block;
+    margin: auto;
 }
 
 .MENU ul {
@@ -139,22 +143,25 @@ body {
     font-weight: normal;
     font-size: 38px;
     color: #d30202;
+    margin-top: -12px;
 }
 
 /* GALLERY */
 
 .gallery-img {
     display: flex;
-    max-width: 384px;
-    height: 300px;
+}
+
+.gallery-img img {
+    width: 20%;
 }
 
 .gallery-font img {
     padding: 25px;
     width: 245px;
     height: 78px;
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
 }
 
 /* EVENT */
@@ -162,21 +169,27 @@ body {
     width: 173px;
     height: 78px;
     padding: 72px;
+    display: block;
+    margin: auto;
 }
 
 .infobox {
-    width: 1000px;
+    max-width: 1000px;
     height: 200px;
     background-color: #ffffff;
     border: solid 4px #4f260b;
 
     /* ↓本当は<ul>に記述？ */
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: auto;
 }
 
 .info li {
     text-decoration: underline;
+}
+
+.info date-info {
+    padding-left: 50px;
 }
 
 /* ACCESS */
@@ -185,6 +198,8 @@ body {
     width: 213px;
     height: 78px;
     padding: 80px;
+    display: block;
+    margin: auto;
 }
 .access-map iframe {
     width: 100%;
@@ -198,7 +213,7 @@ footer {
     display: flex;
     justify-content: center;
 }
-.footer-font {
+.footer-left {
     width: 226px;
     height: 50px;
     padding: 82px;
@@ -218,9 +233,24 @@ footer {
     font-size: 25px;
 }
 
-.footer copyright {
+.footer copyright p {
     font-family: 游明朝;
     font-weight: normal;
     font-size: 16px;
     color: #000000;
+
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+/* ページ内リンク */
+
+#page-top {
+    position: fixed;
+    right: 100px;
+    bottom: 20px;
+    padding: 10px;
+    width: 125px;
+    height: 125px;
 }
