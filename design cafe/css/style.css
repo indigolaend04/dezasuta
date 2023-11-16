@@ -5,10 +5,14 @@ body {
 }
 
 .header_container {
+    position: absolute;
+    width: 100%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 7% 0 2.7%;
+    box-sizing: border-box;
 }
 
 .logo img {
@@ -31,10 +35,6 @@ body {
 
 .slider {
     width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    height: 50vw;
 }
 
 .slider img {
@@ -44,17 +44,16 @@ body {
 /* TITLE */
 
 .title {
-    padding-top: 330px;
     text-align: center;
 }
 
 .title h3 {
-    padding-top: 250px;
+    padding-top: 80px;
     line-height: 0.7;
 }
 
 .title h1 {
-    padding-top: 52px;
+    padding-top: 47px;
     line-height: 1.2;
     font-size: 60px;
     font-family: 游明朝;
@@ -72,21 +71,27 @@ body {
 /* ABOUT US */
 
 .ABOUT {
-    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 40px;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    border-bottom-right-radius: 100px;
 }
 
 .about-img {
     width: 500px;
     height: 560px;
     padding-right: 40px;
-    border-bottom-right-radius: 50px;
 }
 
 .about-font img {
     width: 272px;
-    height: 77px;
+    height: 80px;
 }
 
 .about {
@@ -98,8 +103,8 @@ body {
     font-family: 游明朝;
     font-weight: normal;
     font-size: 44px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    line-height: 1.3;
 
     /* white-space: pre;
     width: 352px;
@@ -107,35 +112,44 @@ body {
 }
 
 .about p {
-    /* white-space: pre;
-    width: 410px;
-    height: 292px; */
-
+    max-width: 415px;
     font-family: 游明朝;
     font-weight: normal;
     font-size: 16px;
+    padding-top: 25px;
+    line-height: 1.6;
 }
 
 /* MENU */
 
 .MENU {
+    max-width: 1000px;
+
+    margin: 0 auto;
     padding-top: 50px;
 }
 
+.MENU li img {
+    border-top-right-radius: 50px;
+    max-width: 328px;
+    max-height: 219px;
+}
 .menu-font img {
     width: 151px;
     height: 78px;
     display: block;
     margin: auto;
+    padding: 20px;
 }
 
 .MENU ul {
     display: flex;
-    padding: 50px;
+    width: 100%;
 }
 
 .MENU li {
-    padding: 20px;
+    justify-content: center;
+    margin-right: 50px;
 }
 
 .MENU li h2 {
@@ -144,6 +158,10 @@ body {
     font-size: 38px;
     color: #d30202;
     margin-top: -12px;
+}
+
+.MENU li p {
+    max-width: 300px;
 }
 
 /* GALLERY */
@@ -165,6 +183,12 @@ body {
 }
 
 /* EVENT */
+.EVENT {
+    max-width: 1000px;
+    display: block;
+    margin: 0 auto;
+}
+
 .event-font {
     width: 173px;
     height: 78px;
@@ -173,22 +197,34 @@ body {
     margin: auto;
 }
 
-.infobox {
+.EVENT .infobox {
     max-width: 1000px;
-    height: 200px;
+
     background-color: #ffffff;
     border: solid 4px #4f260b;
 
-    /* ↓本当は<ul>に記述？ */
     display: block;
     margin: auto;
+    padding-top: 38px;
+    padding-bottom: 22px;
+}
+
+.infobox ul {
+    max-width: 670px;
+    margin: 0 auto;
+    font-size: 23px;
 }
 
 .info li {
+    margin-bottom: 20px;
     text-decoration: underline;
 }
 
-.info date-info {
+.info li .date {
+    margin-right: 35px;
+}
+
+.info .date-info {
     padding-left: 50px;
 }
 
@@ -203,45 +239,53 @@ body {
 }
 .access-map iframe {
     width: 100%;
+    vertical-align: bottom;
 }
 
 /* FOOTER */
 footer {
     background-color: #ffffff;
-}
-.footer {
-    display: flex;
-    justify-content: center;
-}
-.footer-left {
-    width: 226px;
-    height: 50px;
-    padding: 82px;
+    width: 100%;
 }
 
-.footer-address {
+.FOOTER {
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 53px;
+}
+
+.footer-font {
+    width: 226px;
+    height: 50px;
+}
+
+.footer-address ul {
+    /* フォントの詳細 */
     font-family: 游明朝;
     font-weight: normal;
     font-size: 20px;
     color: #000000;
 }
 
-.footer-address {
-    white-space: pre;
-    width: 346px;
-    height: 141px;
-    font-size: 25px;
+.footer-address li {
+    padding-left: 67px;
+    line-height: 1.9;
 }
 
-.footer copyright p {
+.copyright p {
     font-family: 游明朝;
     font-weight: normal;
     font-size: 16px;
     color: #000000;
 
-    padding: 20px;
-    display: block;
-    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+    line-height: 2.1;
 }
 
 /* ページ内リンク */
@@ -249,7 +293,7 @@ footer {
 #page-top {
     position: fixed;
     right: 100px;
-    bottom: 20px;
+    bottom: 180px;
     padding: 10px;
     width: 125px;
     height: 125px;
