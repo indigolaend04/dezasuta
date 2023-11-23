@@ -48,24 +48,33 @@ body {
 }
 
 .title h3 {
-    padding-top: 80px;
-    line-height: 0.7;
+    margin-top: 40px;
+    line-height: 3.8;
+
+    /* フォントの詳細 */
+    font-size: 30px;
+    font-family: 游明朝;
+    font-weight: normal;
 }
 
 .title h1 {
-    padding-top: 47px;
-    line-height: 1.2;
-    font-size: 60px;
+    margin-top: 35px;
+    line-height: 1.1;
+
+    /* フォントの詳細 */
+    font-size: 82px;
     font-family: 游明朝;
     font-weight: normal;
 }
 
 .title p {
-    padding-top: 20px;
-    line-height: 0.9;
+    padding-top: 18px;
+    line-height: 1.6;
+
+    /* フォントの詳細 */
+    font-size: 23px;
     font-family: 游明朝;
     font-weight: normal;
-    font-size: 23px;
 }
 
 /* ABOUT US */
@@ -105,10 +114,6 @@ body {
     font-size: 44px;
     padding-top: 20px;
     line-height: 1.3;
-
-    /* white-space: pre;
-    width: 352px;
-    height: 115px; */
 }
 
 .about p {
@@ -131,8 +136,6 @@ body {
 
 .MENU li img {
     border-top-right-radius: 50px;
-    max-width: 328px;
-    max-height: 219px;
 }
 .menu-font img {
     width: 151px;
@@ -145,11 +148,11 @@ body {
 .MENU ul {
     display: flex;
     width: 100%;
+    gap: 5%;
 }
 
 .MENU li {
     justify-content: center;
-    margin-right: 50px;
 }
 
 .MENU li h2 {
@@ -292,9 +295,260 @@ footer {
 
 #page-top {
     position: fixed;
-    right: 100px;
-    bottom: 180px;
+    right: 20px;
+    bottom: 20px;
     padding: 10px;
     width: 125px;
     height: 125px;
+}
+
+.sp_nav,
+.hamburger {
+    display: none;
+}
+
+/* 1100px以下のとき*/
+@media screen and (max-width: 1100px) {
+    .sp_nav {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(000, 000, 000, 0.5);
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp_nav li {
+        padding: 16px;
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .header_nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        height: 30px;
+        width: 33px;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+    }
+
+    /* ハンバーガーメニュー */
+    .hamburger span {
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        content: "";
+        top: 20px;
+        right: 10px;
+        z-index: 9999;
+        transition: 1s;
+    }
+
+    .hamburger span::before,
+    .hamburger span::after {
+        position: absolute;
+        content: "";
+        width: 33px;
+        height: 3px;
+        background-color: #fff;
+        transition: 1s;
+    }
+    .hamburger span::before {
+        top: -10px;
+    }
+    .hamburger span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    /* work01 1つ目のブレイクポイント */
+    .title h1 {
+        font-size: 75px;
+    }
+
+    .about h2 {
+        font-size: 38px;
+    }
+}
+
+/* work02  767px以下のとき */
+@media screen and (max-width: 767px) {
+    /* TITLE */
+    .title {
+        max-width: 767px;
+        text-align: center;
+    }
+    .title h3 {
+        /* フォントの詳細 */
+        font-size: 17px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
+
+    .title h1 {
+        max-width: 767px;
+        width: 100%;
+        margin-top: 20px;
+        /* フォントの詳細 */
+        line-height: 1.1;
+
+        font-size: 38px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
+    .title p {
+        line-height: 1.8;
+        /* フォントの詳細 */
+        font-size: 16px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
+
+    /* ABOUT US*/
+
+    .ABOUT {
+        max-width: 767px;
+        flex-direction: column;
+        /* align-content: center; */
+    }
+
+    .about {
+        order: 1;
+    }
+    .about-img {
+        order: 2;
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .about-img img {
+        border-radius: 0;
+    }
+
+    .about-font img {
+        width: 160px;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* MENU */
+    .MENU {
+        margin-top: -200px;
+    }
+
+    .MENU .menu-font img {
+        width: 87px;
+        height: 45px;
+    }
+    .MENU ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MENU li h2 {
+        font-size: 40px;
+    }
+    .MENU li p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+        /* フォントの詳細 */
+        font-size: 17px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
+
+    /* GALLERY */
+    .GALLERY .gallery-font img {
+        width: 142px;
+        height: 45px;
+    }
+
+    .gallery-img img:nth-child(1),
+    .gallery-img img:nth-child(2),
+    .gallery-img img:nth-child(4),
+    .gallery-img img:nth-child(5) {
+        display: none;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    /* EVENT */
+    .EVENT .event-font img {
+        width: 100px;
+        height: 45px;
+    }
+
+    .EVENT .infobox {
+        width: 335px;
+        /* margin: 0 auto; */
+    }
+
+    /* ACCESS */
+    .ACCESS .access-font img {
+        width: 124px;
+        height: 45px;
+    }
+
+    /* FOOTER */
+    .FOOTER {
+        flex-direction: column;
+        display: block;
+    }
+    /* .footer-font {
+        margin-left: 15px;
+        margin-right: 125px;
+        margin-bottom: 25px;
+    } */
+
+    .footer-font img {
+        width: 226px;
+        height: 50px;
+        margin-left: 67px;
+    }
+
+    .footer-address ul {
+        margin-top: 25px;
+    }
+    .footer-address li {
+        margin-right: 100px;
+        line-height: 1.7;
+        /* フォントの詳細 */
+        font-size: 18px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
+    .copyright p {
+        /* フォントの詳細 */
+        font-size: 16px;
+        font-family: 游明朝;
+        font-weight: normal;
+    }
 }
