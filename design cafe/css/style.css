@@ -43,6 +43,12 @@ body {
 
 /* TITLE */
 
+@media screen and (min-width: 767px) {
+    .sp_title {
+        display: none;
+    }
+}
+
 .title {
     text-align: center;
 }
@@ -53,7 +59,9 @@ body {
 
     /* フォントの詳細 */
     font-size: 30px;
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: normal;
 }
 
@@ -63,7 +71,9 @@ body {
 
     /* フォントの詳細 */
     font-size: 82px;
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: normal;
 }
 
@@ -73,11 +83,18 @@ body {
 
     /* フォントの詳細 */
     font-size: 23px;
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
 }
 
 /* ABOUT US */
+@media screen and (min-width: 767px) {
+    .sp_ABOUT {
+        display: none;
+    }
+}
 
 .ABOUT {
     max-width: 1000px;
@@ -113,7 +130,9 @@ body {
     line-height: 1.3;
 
     /* フォントの詳細 */
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: normal;
     font-size: 44px;
 }
@@ -124,7 +143,9 @@ body {
     line-height: 1.6;
 
     /* フォントの詳細 */
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
     font-size: 16px;
 }
@@ -159,7 +180,9 @@ body {
 }
 
 .MENU li h2 {
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
     font-size: 38px;
     color: #d30202;
@@ -170,7 +193,9 @@ body {
     margin-top: 10px;
     line-height: 1.4;
 
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
     font-size: 17px;
 }
@@ -230,7 +255,6 @@ body {
 
 .info li {
     margin-bottom: 20px;
-    text-decoration: underline;
 }
 
 .date {
@@ -239,6 +263,7 @@ body {
 
 .date-info {
     padding-left: 50px;
+    text-decoration: underline;
 }
 
 /* ACCESS */
@@ -282,7 +307,9 @@ footer {
 .footer-address ul {
     line-height: 1.9;
     /* フォントの詳細 */
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
     font-size: 20px;
     color: #000000;
@@ -294,7 +321,9 @@ footer {
 }
 
 .copyright p {
-    font-family: 游明朝;
+    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝", serif;
     font-weight: bolder;
     font-size: 16px;
     color: #000000;
@@ -411,73 +440,117 @@ footer {
 /* work02  767px以下のとき */
 @media screen and (max-width: 767px) {
     /* TITLE */
-    .title {
+    .title,
+    .title h3,
+    .title h1,
+    .title p {
+        display: none;
+    }
+
+    .sp_title {
         max-width: 767px;
         text-align: center;
     }
-    .title h3 {
+    .sp_title_h3 {
+        margin-top: 42px;
         /* フォントの詳細 */
         font-size: 17px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
 
-    .title h1 {
+    .sp_title_h1 {
         max-width: 767px;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         /* フォントの詳細 */
         line-height: 1.1;
 
         font-size: 38px;
-        font-family: 游明朝;
-        font-weight: bolder;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-weight: normal;
     }
-    .title p {
+    .sp_title_p {
+        margin-bottom: 60px;
         line-height: 1.8;
         /* フォントの詳細 */
         font-size: 16px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
 
     /* ABOUT US*/
-
-    .ABOUT {
-        max-width: 767px;
-        flex-direction: column;
+    .ABOUT,
+    .about-img img,
+    .about-img,
+    .about-font img,
+    .about,
+    .about h2,
+    .about p {
+        display: none;
     }
 
-    .about-font img {
+    .sp_about-font img {
         width: 160px;
         height: 50px;
         display: block;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 17px;
     }
 
-    .about {
-        order: 1;
-    }
-    .about-img {
-        order: 2;
+    .sp_about-img {
         padding: 0;
         width: 100%;
     }
-    .about-img img {
+    .sp_about-img img {
         border-radius: 0;
+        margin-bottom: 37px;
+    }
+
+    .sp_about {
+        padding: 0 30px;
+    }
+    .sp_about_h2 {
+        margin-bottom: 30px;
+        line-height: 1.2;
+        /* フォントの詳細 */
+        font-size: 36px;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-weight: normal;
+    }
+
+    .sp_about_p {
+        line-height: 1.7;
+        margin-bottom: 57px;
+
+        /* フォントの詳細 */
+        font-size: 16px;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        font-weight: bolder;
     }
 
     /* MENU */
     .MENU {
-        padding: 50px;
-        margin-top: -50px;
+        padding: 0 50px;
     }
 
     .menu-font img {
         width: 100px;
         height: 50px;
-        margin-bottom: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
     .MENU ul {
         flex-direction: column;
@@ -496,14 +569,19 @@ footer {
         line-height: 1.5;
         /* フォントの詳細 */
         font-size: 17px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: normal;
     }
 
     /* GALLERY */
     .gallery-font img {
-        width: 160px;
+        width: 170px;
         height: 50px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -30px;
         margin-bottom: 12px;
     }
 
@@ -523,23 +601,30 @@ footer {
 
     .EVENT {
         padding: 0 16px;
+        margin-bottom: -40px;
     }
 
-    .EVENT .event-font img {
+    .event-font {
+        margin-top: 5px;
+        margin-bottom: -10px;
+    }
+    .event-font img {
         width: 120px;
         height: 50px;
+        display: block;
         margin: 0 auto;
-        margin-top: 20px;
     }
 
     .info {
-        padding: 16px;
+        padding: 0 16px;
     }
 
     .info li {
         /* フォントの詳細 */
         font-size: 16px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
     .info a .date {
@@ -548,13 +633,21 @@ footer {
 
     .info a .date-info {
         display: block;
+        text-decoration: underline;
     }
 
     /* ACCESS */
-    .ACCESS .access-font img {
+
+    .access-font img {
         width: 150px;
         height: 50px;
+        display: block;
         margin: 0 auto;
+    }
+
+    .access-map iframe {
+        margin-top: -50px;
+        height: 220px;
     }
 
     /* FOOTER */
@@ -564,7 +657,7 @@ footer {
     }
 
     .footer-font img {
-        width: 200px;
+        width: 226px;
         height: 50px;
         margin-left: 67px;
         margin-top: -20px;
@@ -581,14 +674,18 @@ footer {
         line-height: 1.7;
         /* フォントの詳細 */
         font-size: 18px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
     .copyright p {
         margin-top: -30px 0;
         /* フォントの詳細 */
         font-size: 16px;
-        font-family: 游明朝;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
 }
