@@ -255,6 +255,10 @@ body {
 
 .info li {
     margin-bottom: 20px;
+    text-decoration: underline;
+    .date {
+        display: inline-block;
+    }
 }
 
 .date {
@@ -627,14 +631,13 @@ footer {
             "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-weight: bolder;
     }
-    .info a .date {
+    /* .infobox a .date {
         display: block;
-    }
-
-    .info a .date-info {
+        display: inline-block;
+    } */
+    /* a .date-info {
         display: block;
-        text-decoration: underline;
-    }
+    } */
 
     /* ACCESS */
 
