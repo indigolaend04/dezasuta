@@ -3,53 +3,304 @@
 body {
     background-color: #ffffff;
 }
+/*--------------------------------
+1ページ目
+index.html
+---------------------------------*/
+
 /* ヘッダー */
 .header_nav ul {
     display: flex;
     justify-content: center;
-    gap: 123px;
     margin-top: 111px;
 }
 
 .header_nav li {
+    color: #0067c0;
     font-size: 33px;
     text-align: center;
-    color: #0067c0;
+    font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+    padding: 0 40px;
 }
 
-/* title */
-/* .title h1 {
-    font-size: 62px;
-    text-align: center;
-    color: #0067c0;
-    margin-top: 350px;
+/* TITLE */
+
+.pc_title-h1 img,
+.pc_title-h6 img,
+.pc_title-umbrella img {
+    display: block;
+    margin: 0 auto;
 }
-.title h6 {
-    font-size: 33px;
-    text-align: center;
-    color: #0067c0;
-    margin-top: 7px;
-} */
+
 .pc_title-h1 img {
     width: 434px;
     height: 70px;
-    display: block;
-    margin: 0 auto;
     margin-top: 350px;
 }
 
 .pc_title-h6 img {
     width: 614px;
     height: 36px;
-    display: block;
-    margin: 0 auto;
     margin-top: 7px;
 }
 
 .pc_title-umbrella img {
     width: 103px;
     height: 92px;
+    margin-top: 126px;
+}
+
+/* WORKS */
+
+.WORKS {
+    max-width: 1116px;
+    margin: 0 auto;
+}
+.pc_works img {
+    width: 377px;
+    height: 78px;
     display: block;
     margin: 0 auto;
-    margin-top: 126px;
+    margin-top: 350px;
+}
+.WORKS p {
+    line-height: 1.7;
+    font-size: 18px;
+    text-align: center;
+    color: #0a1014;
+
+    font-weight: 500;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+    padding: 50px 67px;
+}
+.WORKS ul {
+    display: flex;
+    justify-content: center;
+}
+
+.WORKS li {
+    padding: 15px;
+}
+
+/* moreボタン */
+/* 角丸アイコン */
+.pc_button_more {
+    width: 250px;
+    height: 55px;
+    background-color: #0067c0;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 角丸 */
+    border-radius: 27px;
+}
+
+/* テキスト */
+.pc_button_more a {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    padding-top: 12px;
+}
+/* 矢印 */
+.pc_button_more a::after {
+    content: "";
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    margin: auto;
+    border-top: 4px solid red;
+    border-right: 4px solid red;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+}
+
+/* ABOUT */
+.pc_about img {
+    width: 362px;
+    height: 78px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 350px;
+}
+
+.pc_profile {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    padding: 110px 0 0 0;
+}
+
+.pc_profile_name ruby,
+.pc_profile_name h2,
+.pc_profile_text {
+    color: #0a1014;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_profile_name ruby {
+    font-size: 30px;
+    font-weight: bold;
+}
+.pc_profile_name h2 {
+    line-height: 1.2;
+    padding-top: 30px;
+    font-size: 58px;
+}
+.pc_profile_text {
+    line-height: 1.7;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 78px;
+    width: 715px;
+}
+
+/* CONTACT */
+.CONTACT {
+    margin-bottom: 210px;
+}
+.pc_contact img {
+    width: 521px;
+    height: 78px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 210px;
+}
+
+.CONTACT p {
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    color: #0a1014;
+    padding: 50px 180px;
+    font-weight: bold;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/* FOOTER */
+.footer_box li,
+.footer_box p {
+    font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+.footer_box {
+    background-color: #1c4684;
+    margin: 0 auto;
+    height: 141px;
+    width: 100%;
+}
+.footer_box ul {
+    display: flex;
+    justify-content: center;
+}
+.footer_box li {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 32px;
+    padding: 0 40px;
+}
+
+.footer_box p {
+    letter-spacing: 0.4em;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 28px;
+}
+
+/* ページ内リンク */
+#page-top {
+    width: 103px;
+    height: 227px;
+    position: fixed;
+    right: 20px;
+    bottom: 140px;
+    padding: 10px;
+
+    z-index: 1;
+}
+
+/*--------------------------------
+2ページ目（WORKSの一覧ページ）
+works.html
+---------------------------------*/
+
+.pc_works_list img {
+    width: 377px;
+    height: 78px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 131px;
+    margin-bottom: 112px;
+}
+
+.pc_works_wrap img {
+    width: calc(90% / 2);
+    padding: 20px;
+}
+
+/*--------------------------------
+デザスタmobile学割プラン 詳細ページ
+works_mobile.html
+---------------------------------*/
+.pc_works_01 img {
+    width: 900px;
+    height: 675px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+.pc_works_mobile {
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+.pc_works_mobile th {
+    /* width: 1116px; */
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    font-size: 20px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+}
+.td_right {
+    font-size: 20px;
+    font-weight: 300;
 }

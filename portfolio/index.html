@@ -10,27 +10,33 @@
 
 </head>
 
+<!-- ページ内リンク -->
+<a href="#" id="page-top">
+    <img src="./images/to_top@2x.png">
+</a>
+
 <body>
+
     <header>
         <nav class="header_nav">
             <ul>
                 <li>
-                    <a>
+                    <a href="">
                         HOME
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="">
                         WORKS
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a>
+                    <a href="">
                         CONTACT
                     </a>
                 </li>
@@ -39,20 +45,151 @@
         </nav>
     </header>
 
-    <section class="title">
-        <!-- <h1>AYUMI.M</h1>
-        <h6>it is a designer portforio site</h6> -->
+    <section class="TITLE">
         <div class="pc_title-h1">
-            <img src="./images/2x/title_h1@2x.png" alt="フォントの画像">
+            <img src="./images/title_h1@2x.png" alt="フォントの画像">
         </div>
         <div class="pc_title-h6">
-            <img src="./images/2x/title_h6@2x.png" alt="フォントの画像">
+            <img src="./images/title_h6@2x.png" alt="フォントの画像">
         </div>
         <div class="pc_title-umbrella">
             <img src="./images/umbrella@2x.png" alt="傘のアイコン画像">
         </div>
     </section>
 
+    <section class="WORKS">
+        <div class="pc_works">
+            <img src="./images/works@2x.png" alt="フォントの画像">
+        </div>
+        <p>
+            WEBデザインとコーディングを中心に制作を行っています。丁寧なデザインと対応力が特徴です。<br>是非これまでの実績をご覧いただき、お気軽にメールなどでお問い合わせください。
+        </p>
+        <ul>
+            <li>
+                <img src="./images/pc_works_hair salon@2x.png" alt="課題の画像(美容室)">
+            </li>
+            <li>
+                <img src="./images/pc_works_coworking@2x.png" alt="課題の画像(コワーキングスペース)">
+            </li>
+            <li>
+                <img src="./images/pc_works_travel@2x.png" alt="課題の画像(旅行アプリ)">
+            </li>
+        </ul>
+        <div class="pc_button_more">
+            <a href="">
+                more
+            </a>
+        </div>
+    </section>
+
+    <section class="ABOUT">
+        <div class="pc_about">
+            <img src="./images/about@2x.png" alt="フォントの画像">
+        </div>
+    </section>
+
+    <section class="pc_profile">
+
+        <div class="pc_profile_name">
+            <ruby>
+                まえだ　あゆみ
+            </ruby>
+            <h2>
+                AYUMI<br>
+                MAEDA
+            </h2>
+        </div>
+
+        <p class="pc_profile_text">
+            神奈川県出身。
+            <br><br>
+            接客業に従事しながら、オンラインスクールにてウェブデザインの勉強をしています。<br>
+            シンプルに、伝わりやすくはもちろんですが、
+            愛着を持ってもらえるようなデザインを提供することを大切にしています。
+            <br><br>
+            好きなものは
+            散歩、ラジオ、ドラマ。
+            <br><br>
+            使用ソフト：<br>
+            - adobe photoshop<br>
+            - adobe illustrator<br>
+            - Visual Studio Code
+        </p>
+    </section>
+
+    <section class="CONTACT">
+        <div class="pc_contact">
+            <img src="./images/contact@2x.png" alt="フォントの画像">
+        </div>
+        <p>
+            当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br>
+            制作のご依頼やご相談、ご不明な点等ございましたらお気軽にお問い合わせください。<br>
+            3営業日以内にご連絡をさせていただきます。
+        </p>
+
+        <form id="contact-form" class="form-horizontal" role="form">
+            <!-- 名前 -->
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                </div>
+            </div>
+
+            <!-- メール -->
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value=""
+                        required>
+                </div>
+            </div>
+
+            <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        </form>
+
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="alt-send-button">
+                <i class="fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+        </button>
+
+    </section>
+
+
 </body>
+
+<footer>
+    <div class="FOOTER">
+
+        <div class="footer_box">
+            <ul>
+                <li>
+                    <a href="">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        CONTACT
+                    </a>
+                </li>
+
+            </ul>
+            <p class="copyright">
+                ©AYUMI.M 2023
+            </p>
+        </div>
+
+    </div>
+</footer>
 
 </html>
