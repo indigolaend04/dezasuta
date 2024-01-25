@@ -206,6 +206,79 @@ index.html
         "ＭＳ Ｐゴシック", sans-serif;
 }
 
+/* 問い合わせフォーム */
+.c-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.c-form__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.c-form__item.field-name,
+.c-form__item.field-mail,
+.c-form__item.field-message {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.c-form__required {
+    color: #999999;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.c-form__label,
+.c-form__input {
+    padding: 10px;
+}
+.c-form__label {
+    width: 90%;
+}
+.c-form__input {
+    width: 90%;
+    font-size: 16px;
+    border: solid 1px #0067c0;
+    border-radius: 4px;
+}
+.c-form__input:focus-visible {
+    outline: #0067c0 auto 1px;
+}
+.c-form__required {
+    color: #fff;
+    background-color: #1c4684;
+    opacity: 53%;
+    border-radius: 27px;
+    padding: 3px 18px;
+    margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+    height: 160px;
+}
+
+@media (min-width: 640px) {
+    .c-form__item {
+        flex-wrap: nowrap;
+    }
+    .c-form__label {
+        width: 40%;
+    }
+    .c-form__input {
+        width: 55%;
+    }
+}
+
 /* 送信する ボタン */
 /* 角丸アイコン */
 .pc_button_send {
