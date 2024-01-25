@@ -2,12 +2,12 @@
 
 body {
     background-color: #ffffff;
+    background-image: url(../images/rain.png);
 }
 /*--------------------------------
 1ページ目
 index.html
 ---------------------------------*/
-
 /* ヘッダー */
 .header_nav ul {
     display: flex;
@@ -93,6 +93,7 @@ index.html
 .pc_button_more {
     width: 250px;
     height: 55px;
+    line-height: 55px;
     background-color: #0067c0;
     margin: 0 auto;
     margin-top: 100px;
@@ -102,7 +103,7 @@ index.html
 
 /* テキスト */
 .pc_button_more a {
-    display: flex;
+    display: block;
     text-align: center;
     justify-content: space-around;
     font-size: 24px;
@@ -111,22 +112,28 @@ index.html
         "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
         "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
         "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
-    padding-top: 12px;
+    position: relative;
 }
 /* 矢印 */
+.pc_button_more a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    right: 25px;
+    top: 30px;
+}
 .pc_button_more a::after {
     content: "";
-    position: relative;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 14px;
-    height: 14px;
-    margin: auto;
-    border-top: 4px solid red;
-    border-right: 4px solid red;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
     transform: rotate(45deg);
-    box-sizing: border-box;
+    right: 25px;
+    top: 24px;
 }
 
 /* ABOUT */
@@ -171,6 +178,7 @@ index.html
     font-weight: bold;
     padding-left: 78px;
     width: 715px;
+    margin-bottom: 197px;
 }
 
 /* CONTACT */
@@ -196,6 +204,54 @@ index.html
         "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
         "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
         "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/* 送信する ボタン */
+/* 角丸アイコン */
+.pc_button_send {
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #0067c0;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 角丸 */
+    border-radius: 27px;
+}
+
+/* テキスト */
+.pc_button_send a {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    position: relative;
+}
+/* 矢印 */
+.pc_button_send a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    right: 25px;
+    top: 30px;
+}
+.pc_button_send a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    right: 25px;
+    top: 24px;
 }
 
 /* FOOTER */
@@ -258,33 +314,67 @@ works.html
     margin-top: 131px;
     margin-bottom: 112px;
 }
-
-.pc_works_wrap img {
+.pc_works_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pc_works_wrap > div {
     width: calc(90% / 2);
+    text-align: center;
     padding: 20px;
+}
+
+.pc_works_wrap p {
+    font-size: 15px;
+}
+
+.pc_works_wrap span {
+    font-size: 12px;
+}
+
+.pc_works_wrap p,
+.pc_works_wrap span {
+    justify-content: flex-start;
+    color: #1c4684;
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.WORKS_FOOTER .footer_box {
+    margin-top: 312px;
 }
 
 /*--------------------------------
 デザスタmobile学割プラン 詳細ページ
-works_mobile.html
+works_01.html
 ---------------------------------*/
+.pc_works_01 {
+    padding: 0 16px;
+}
 .pc_works_01 img {
-    width: 900px;
-    height: 675px;
+    width: 1116px;
+    height: 624px;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
     margin-bottom: 76px;
 }
 .pc_works_mobile {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
     color: #1c4684;
     font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
         "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
         "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
         "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
 }
+
 .pc_works_mobile th {
-    /* width: 1116px; */
+    text-align: left;
     font-size: 28px;
     font-weight: bold;
     border-top: solid 1px #0067c0;
@@ -292,15 +382,482 @@ works_mobile.html
 }
 
 .works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
     width: 900px;
     line-height: 3.2;
 }
 .td_left {
+    display: block;
+    width: 25%;
     font-size: 20px;
     font-weight: bold;
-    border-top: solid 1px #0067c0;
 }
 .td_right {
+    width: 75%;
+    display: block;
     font-size: 20px;
     font-weight: 300;
+}
+
+.mobile_banner img {
+    width: 1116px;
+    height: 837px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+
+/* 一覧に戻る ボタン */
+/* 角丸アイコン */
+.pc_button_back {
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #0067c0;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 角丸 */
+    border-radius: 27px;
+    margin-bottom: 205px;
+}
+
+/* テキスト */
+.pc_button_back a {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    position: relative;
+}
+/* 矢印 */
+.pc_button_back a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    left: 25px;
+    top: 30px;
+}
+.pc_button_back a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    left: 25px;
+    top: 24px;
+}
+
+/* CONTACT */
+.CONTACT {
+    margin-bottom: 210px;
+}
+.pc_contact img {
+    width: 521px;
+    height: 78px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* まずは相談してみる ボタン */
+/* 角丸アイコン */
+.pc_button_contact {
+    width: 390px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #0067c0;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 角丸 */
+    border-radius: 27px;
+    margin-bottom: 447px;
+}
+
+/* テキスト */
+.pc_button_contact a {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    position: relative;
+    margin-bottom: 205px;
+}
+/* 矢印 */
+.pc_button_contact a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    right: 25px;
+    top: 30px;
+}
+.pc_button_contact a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    right: 25px;
+    top: 24px;
+}
+
+/*--------------------------------
+旅行メディアのアプリ版広告 詳細ページ
+works_02.html
+---------------------------------*/
+.pc_works_02 {
+    padding: 0 16px;
+}
+.pc_works_02 img {
+    width: 1116px;
+    height: 624px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+.pc_works_travel {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_works_travel th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    display: block;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.td_right {
+    width: 75%;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.travel_banner img {
+    width: 675px;
+    height: 675px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+
+/*--------------------------------
+架空のハンバーガー店　新メニュー
+「激旨バーガー」 詳細ページ
+works_03.html
+---------------------------------*/
+.pc_works_03 {
+    padding: 0 16px;
+}
+.pc_works_03 img {
+    width: 1116px;
+    height: 624px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+.pc_works_hamburger {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_works_hamburger th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    display: block;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.td_right {
+    width: 75%;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hamburger_banner img:nth-child(1),
+.hamburger_banner img:nth-child(3) {
+    width: 675px;
+    height: 675px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+
+.hamburger_banner img:nth-child(2),
+.hamburger_banner img:nth-child(4) {
+    width: 900px;
+    height: 506px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+
+/*--------------------------------
+架空のコワーキングスペース
+「WOKERS」 詳細ページ
+works_04.html
+---------------------------------*/
+.pc_works_04 {
+    padding: 0 16px;
+}
+.pc_works_04 img {
+    width: 1116px;
+    height: 624px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+.pc_works_coworking {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_works_coworking th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    display: block;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.td_right {
+    width: 75%;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.coworking_lp_pc img {
+    width: 700px;
+    height: 1537px;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+.coworking_lp_sp img {
+    width: 250px;
+    height: 2526px;
+    margin: 165px 0 212px 150px;
+}
+
+.coworking_lp {
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------------
+架空のヘアサロン「LIFE hair design」
+works_05.html
+---------------------------------*/
+.pc_works_05 {
+    padding: 0 16px;
+}
+.pc_works_05 img {
+    width: 1116px;
+    height: 624px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+.pc_works_hairsalon {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_works_hairsalon th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    display: block;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.td_right {
+    width: 75%;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.hairsalon_lp img {
+    width: 800px;
+    height: 3676px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 165px;
+    margin-bottom: 212px;
+}
+
+/*--------------------------------
+架空のカフェ　ホームページ
+「デザインカフェ」
+works_06.html
+---------------------------------*/
+
+.pc_works_06 {
+    padding: 0 16px;
+}
+.pc_works_06 img {
+    width: 1116px;
+    height: 624px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 375px;
+    margin-bottom: 76px;
+}
+
+.pc_works_designcafe {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: #1c4684;
+    font-family: "FOT-UD丸ゴ_ラージ Pr6N", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.pc_works_designcafe th {
+    text-align: left;
+    font-size: 28px;
+    font-weight: bold;
+    border-top: solid 1px #0067c0;
+    padding: 30px 0;
+}
+
+.works_detail {
+    display: flex;
+    border-top: solid 1px #0067c0;
+    width: 900px;
+    line-height: 3.2;
+}
+.td_left {
+    display: block;
+    width: 25%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.td_right {
+    width: 75%;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+}
+.designcafe_lp_pc img {
+    width: 700px;
+    height: 1531px;
+    margin-top: 86px;
+    margin-bottom: 212px;
+}
+.designcafe_lp_sp img {
+    width: 250px;
+    height: 2792px;
+    margin: 86px 0 212px 150px;
+}
+
+.designcafe_lp {
+    display: flex;
+    justify-content: center;
 }
