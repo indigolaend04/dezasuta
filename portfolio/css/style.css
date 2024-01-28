@@ -13,6 +13,8 @@ index.html
     display: flex;
     justify-content: center;
     margin-top: 111px;
+    padding: 0 16px;
+    gap: 70px;
 }
 
 .header_nav li {
@@ -23,7 +25,6 @@ index.html
         "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
         "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
         "ＭＳ Ｐゴシック", sans-serif;
-    padding: 0 40px;
 }
 
 /* TITLE */
@@ -150,7 +151,7 @@ index.html
     margin: 0 auto;
     justify-content: center;
     display: flex;
-    padding: 110px 0 0 0;
+    padding: 110px 16px 0;
 }
 
 .pc_profile_name ruby,
@@ -344,13 +345,13 @@ textarea.c-form__input {
 .footer_box ul {
     display: flex;
     justify-content: center;
+    gap: 70px;
 }
 .footer_box li {
     color: #ffffff;
     font-size: 30px;
     font-weight: normal;
     margin-top: 32px;
-    padding: 0 40px;
 }
 
 .footer_box p {
@@ -428,8 +429,9 @@ works_01.html
     padding: 0 16px;
 }
 .pc_works_01 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -457,7 +459,7 @@ works_01.html
 .works_detail {
     display: flex;
     border-top: solid 1px #0067c0;
-    width: 900px;
+
     line-height: 3.2;
 }
 .td_left {
@@ -474,8 +476,9 @@ works_01.html
 }
 
 .mobile_banner img {
-    width: 1116px;
-    height: 837px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 165px;
@@ -561,7 +564,6 @@ works_01.html
 .pc_button_contact a {
     display: block;
     text-align: center;
-    justify-content: space-around;
     font-size: 24px;
     color: #ffffff;
 
@@ -602,8 +604,9 @@ works_02.html
     padding: 0 16px;
 }
 .pc_works_02 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -634,22 +637,11 @@ works_02.html
     width: 900px;
     line-height: 3.2;
 }
-.td_left {
-    display: block;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-.td_right {
-    width: 75%;
-    display: block;
-    font-size: 20px;
-    font-weight: 300;
-}
 
 .travel_banner img {
-    width: 675px;
-    height: 675px;
+    max-width: 675px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 165px;
@@ -665,8 +657,9 @@ works_03.html
     padding: 0 16px;
 }
 .pc_works_03 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -697,23 +690,12 @@ works_03.html
     width: 900px;
     line-height: 3.2;
 }
-.td_left {
-    display: block;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-.td_right {
-    width: 75%;
-    display: block;
-    font-size: 20px;
-    font-weight: 300;
-}
 
 .hamburger_banner img:nth-child(1),
 .hamburger_banner img:nth-child(3) {
-    width: 675px;
-    height: 675px;
+    max-width: 675px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 165px;
@@ -722,8 +704,9 @@ works_03.html
 
 .hamburger_banner img:nth-child(2),
 .hamburger_banner img:nth-child(4) {
-    width: 900px;
-    height: 506px;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 165px;
@@ -739,8 +722,9 @@ works_04.html
     padding: 0 16px;
 }
 .pc_works_04 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -771,29 +755,19 @@ works_04.html
     width: 900px;
     line-height: 3.2;
 }
-.td_left {
-    display: block;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-.td_right {
-    width: 75%;
-    display: block;
-    font-size: 20px;
-    font-weight: 300;
-}
 
 .coworking_lp_pc img {
-    width: 700px;
-    height: 1537px;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
     margin-top: 165px;
     margin-bottom: 212px;
 }
 .coworking_lp_sp img {
-    width: 250px;
-    height: 2526px;
-    margin: 165px 0 212px 150px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 165px 0 212px 80px;
 }
 
 .coworking_lp {
@@ -809,8 +783,9 @@ works_05.html
     padding: 0 16px;
 }
 .pc_works_05 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -841,22 +816,11 @@ works_05.html
     width: 900px;
     line-height: 3.2;
 }
-.td_left {
-    display: block;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-.td_right {
-    width: 75%;
-    display: block;
-    font-size: 20px;
-    font-weight: 300;
-}
 
 .hairsalon_lp img {
-    width: 800px;
-    height: 3676px;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 165px;
@@ -873,8 +837,9 @@ works_06.html
     padding: 0 16px;
 }
 .pc_works_06 img {
-    width: 1116px;
-    height: 624px;
+    max-width: 1116px;
+    width: 100%;
+    height: auto;
     display: block;
     margin: 0 auto;
     margin-top: 375px;
@@ -906,28 +871,19 @@ works_06.html
     width: 900px;
     line-height: 3.2;
 }
-.td_left {
-    display: block;
-    width: 25%;
-    font-size: 20px;
-    font-weight: bold;
-}
-.td_right {
-    width: 75%;
-    display: block;
-    font-size: 20px;
-    font-weight: 300;
-}
+
 .designcafe_lp_pc img {
-    width: 700px;
-    height: 1531px;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
     margin-top: 86px;
     margin-bottom: 212px;
 }
 .designcafe_lp_sp img {
-    width: 250px;
-    height: 2792px;
-    margin: 86px 0 212px 150px;
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    margin: 86px 0 212px 80px;
 }
 
 .designcafe_lp {
