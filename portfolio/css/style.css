@@ -28,6 +28,15 @@ index.html
 }
 
 /* TITLE */
+@media screen and (min-width: 767px) {
+    .SP_TITLE,
+    .SP_WORKS,
+    .sp_about,
+    .sp_profile,
+    .SP_CONTACT {
+        display: none;
+    }
+}
 
 .pc_title-h1 img,
 .pc_title-h6 img,
@@ -889,4 +898,327 @@ works_06.html
 .designcafe_lp {
     display: flex;
     justify-content: center;
+}
+
+/*--------------------------------
+767px以下のとき
+---------------------------------*/
+@media screen and (max-width: 767px) {
+    /* index.html */
+    /* WORKS */
+    .WORKS p {
+        font-size: 15px;
+    }
+
+    /* ABOUT */
+
+    .pc_profile {
+        padding: 110px 20px 0;
+    }
+    .pc_profile_text {
+        font-size: 16px;
+    }
+    .CONTACT p {
+        font-size: 16px;
+        padding: 50px 80px;
+    }
+}
+
+/*--------------------------------
+
+428px以下のとき
+---------------------------------*/
+@media screen and (max-width: 428px) {
+    .TITLE {
+        display: none;
+    }
+
+    .header_nav {
+        display: none;
+    }
+
+    /* TITLE */
+    .sp_title-h1 img,
+    .sp_title-h6 img,
+    .sp_title-umbrella img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .sp_title-h1 img {
+        margin-top: 275px;
+        width: 287px;
+        height: 46px;
+    }
+
+    .sp_title-h6 img {
+        margin-top: 24px;
+        width: 161px;
+        height: 48px;
+    }
+    .sp_title-umbrella img {
+        margin-top: 127px;
+        width: 68px;
+        height: 61px;
+        margin-bottom: 150px;
+    }
+    /* ページ内リンク */
+    #page-top img {
+        width: 48px;
+        height: 106px;
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    /* WORKS */
+    .pc_works img {
+        width: 197px;
+        height: 41px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .WORKS p {
+        padding: 0 32px;
+        text-align: start;
+        line-height: 1.6;
+        font-size: 16px;
+        color: #0a1014;
+        font-weight: 500;
+        font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+            "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+            "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+            "ＭＳ Ｐゴシック", sans-serif;
+        margin-top: 25px;
+        margin-bottom: 38px;
+    }
+
+    .WORKS ul {
+        display: block;
+        margin: 0 auto;
+        max-width: 315px;
+        width: 100%;
+        height: auto;
+    }
+    .WORKS li {
+        margin-bottom: 97px;
+    }
+
+    /* moreボタン */
+    /* 角丸アイコン */
+    .pc_button_more {
+        width: 214px;
+        height: 45px;
+        line-height: 45px;
+        background-color: #0067c0;
+        margin: 0 auto;
+        margin-top: 100px;
+        /* 角丸 */
+        border-radius: 27px;
+    }
+
+    /* テキスト */
+    .pc_button_more a {
+        display: block;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 24px;
+        color: #ffffff;
+        font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+            "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+            "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+            "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+        position: relative;
+    }
+    /* 矢印 */
+    .pc_button_more a::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(-45deg);
+        right: 25px;
+        top: 26px;
+    }
+    .pc_button_more a::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        right: 25px;
+        top: 20px;
+    }
+    /* SP ABOUT */
+    .pc_about img {
+        width: 189px;
+        height: 41px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    /* SP PROFILE */
+    .pc_profile {
+        padding: 0 32px;
+    }
+
+    .pc_profile ruby,
+    .pc_profile h2,
+    .pc_profile p,
+    .CONTACT p {
+        color: #0a1014;
+        font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+            "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+            "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+            "ＭＳ Ｐゴシック", sans-serif;
+    }
+    .pc_profile_name ruby {
+        font-size: 16px;
+        padding: 0 32px;
+    }
+    .pc_profile_name h2 {
+        margin: 12px 0 36px;
+        font-size: 67px;
+    }
+
+    .pc_profile_text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 76px;
+    }
+
+    /* SP CONTACT */
+    .CONTACT {
+        padding: 0 32px;
+    }
+    .pc_contact img {
+        width: 271px;
+        height: 41px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .CONTACT p {
+        font-size: 14px;
+        padding: 0 10px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+        text-align: start;
+    }
+
+    /* 送信する ボタン */
+    /* 角丸アイコン */
+    .pc_button_send {
+        width: 214px;
+        height: 45px;
+        line-height: 45px;
+        background-color: #0067c0;
+        margin: 0 auto;
+        margin-top: 100px;
+        /* 角丸 */
+        border-radius: 27px;
+    }
+
+    /* テキスト */
+    .pc_button_send a {
+        display: block;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 24px;
+        color: #ffffff;
+        font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+            "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+            "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+            "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+        position: relative;
+    }
+    /* 矢印 */
+    .pc_button_send a::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(-45deg);
+        right: 25px;
+        top: 26px;
+    }
+    .pc_button_send a::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        right: 25px;
+        top: 20px;
+    }
+
+    .SP_TITLE,
+    .SP_WORKS,
+    .sp_about,
+    .sp_profile,
+    .SP_CONTACT {
+        padding: 0 32px;
+    }
+
+    .FOOTER {
+        margin-top: 143px;
+    }
+    .footer_box {
+        background-color: #1c4684;
+        width: 100%;
+        height: 210px;
+    }
+    .footer_box ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer_box li {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .footer_box p {
+        font-size: 12px;
+    }
+    .copyright {
+        padding-bottom: 20px;
+    }
+}
+
+/*--------------------------------
+428px以下のとき
+works.html(works一覧ページ)
+---------------------------------*/
+@media screen and (max-width: 428px) {
+    .pc_works_list img {
+        width: 197px;
+        height: 41px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 98px;
+    }
+}
+
+/*--------------------------------
+428px以下のとき
+works.html(works一覧ページ)
+---------------------------------*/
+@media screen and (max-width: 428px) {
+    .pc_works_list img {
+        width: 197px;
+        height: 41px;
+        margin-bottom: 20px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 98px;
+    }
 }
