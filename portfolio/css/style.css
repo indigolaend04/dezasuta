@@ -2,7 +2,7 @@
 
 body {
     background-color: #ffffff;
-    background-image: url(../images/rain.png);
+    /* background-image: url(../images/rain.png); */
 }
 /*--------------------------------
 1ページ目
@@ -25,6 +25,12 @@ index.html
         "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
         "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
         "ＭＳ Ｐゴシック", sans-serif;
+}
+
+@media screen and (min-width: 767px) {
+    .sp_nav {
+        display: none;
+    }
 }
 
 /* TITLE */
@@ -50,7 +56,6 @@ index.html
 
 .pc_title-umbrella img {
     width: 103px;
-    height: 92px;
     margin-top: 126px;
 }
 
@@ -65,7 +70,7 @@ index.html
     height: 78px;
     display: block;
     margin: 0 auto;
-    margin-top: 350px;
+    margin-top: 77px;
 }
 .WORKS p {
     line-height: 1.7;
@@ -192,6 +197,11 @@ index.html
     display: block;
     margin: 0 auto;
     margin-top: 210px;
+
+    /* CONTACT上部の区切り線 */
+    border-top: solid 1px;
+    border-color: #1c4684;
+    padding-top: 50px;
 }
 
 .CONTACT p {
@@ -369,9 +379,8 @@ textarea.c-form__input {
     height: 227px;
     position: fixed;
     right: 20px;
-    bottom: 140px;
+    bottom: 50px;
     padding: 10px;
-
     z-index: 1;
 }
 
@@ -419,6 +428,56 @@ works.html
 
 .WORKS_FOOTER .footer_box {
     margin-top: 312px;
+}
+
+/* トップページに戻るボタン */
+/* 角丸アイコン */
+.pc_button_top-page {
+    width: 305px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #0067c0;
+    margin: 0 auto;
+    margin-top: 100px;
+    /* 角丸 */
+    border-radius: 27px;
+    margin-bottom: 205px;
+}
+
+/* テキスト */
+.pc_button_top-page a {
+    display: block;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 24px;
+    color: #ffffff;
+
+    font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+        "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+        "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+    position: relative;
+}
+/* 矢印 */
+.pc_button_top-page a::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    left: 14px;
+    top: 30px;
+}
+.pc_button_top-page a::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    left: 14px;
+    top: 24px;
 }
 
 /*--------------------------------
@@ -483,6 +542,7 @@ works_01.html
     margin: 0 auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 
 /* 一覧に戻る ボタン */
@@ -639,6 +699,7 @@ works_02.html
     margin: 0 auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 
 /*--------------------------------
@@ -686,6 +747,7 @@ works_03.html
     margin: 0 auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 
 .hamburger_banner img:nth-child(2),
@@ -697,6 +759,7 @@ works_03.html
     margin: 0 auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 
 /*--------------------------------
@@ -741,12 +804,14 @@ works_04.html
     height: auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 .coworking_lp_sp img {
     max-width: 250px;
     width: 100%;
     height: auto;
-    margin: 165px 0 212px 80px;
+    margin: 165px 0 212px 50px;
+    border: solid 1px;
 }
 
 .coworking_lp {
@@ -797,6 +862,7 @@ works_05.html
     margin: 0 auto;
     margin-top: 165px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 
 /*--------------------------------
@@ -843,17 +909,135 @@ works_06.html
     height: auto;
     margin-top: 86px;
     margin-bottom: 212px;
+    border: solid 1px;
 }
 .designcafe_lp_sp img {
     max-width: 250px;
     width: 100%;
     height: auto;
     margin: 86px 0 212px 80px;
+    border: solid 1px;
 }
 
 .designcafe_lp {
     display: flex;
     justify-content: center;
+}
+
+/* 雨粒のアニメーション */
+
+html {
+    width: 100%;
+}
+
+.drop {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop li {
+    position: absolute;
+    list-style: none;
+    top: -50px;
+    background: #e5f0f9;
+    transform: rotate(133deg);
+    border-radius: 52% 48% 100% 0% / 100% 50% 50% 0%;
+}
+
+@keyframes fall {
+    to {
+        top: 120%;
+    }
+}
+
+.drop li:nth-child(1) {
+    left: 0%;
+    top: -60px;
+    width: 24px;
+    height: 24px;
+    background-color: #e5f0f9;
+    animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 2s;
+}
+
+.drop li:nth-child(2) {
+    left: 5%;
+    top: -70px;
+    width: 13px;
+    height: 13px;
+    background-color: #e5f0f9;
+    animation: fall 15s linear infinite, sway1 2s ease-in-out infinite alternate;
+    animation-delay: 8s;
+}
+
+.drop li:nth-child(3) {
+    left: 15%;
+    top: -50px;
+    width: 16px;
+    height: 16px;
+    background-color: #e5f0f9;
+    animation: fall 9s linear infinite,
+        sway1 3.5s ease-in-out infinite alternate;
+    animation-delay: 13s;
+}
+
+.drop li:nth-child(4) {
+    left: 30%;
+    top: -70px;
+    width: 18px;
+    height: 18px;
+    background-color: #e5f0f9;
+    animation: fall 8s linear infinite, sway2 4s ease-in-out infinite alternate;
+    animation-delay: 7s;
+}
+.drop li:nth-child(5) {
+    left: 40%;
+    top: -60px;
+    width: 10px;
+    height: 10px;
+    animation: fall 10s linear infinite, sway1 4s ease-in-out infinite alternate;
+    animation-delay: 0s;
+}
+.drop li:nth-child(6) {
+    left: 55%;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: #e5f0f9;
+    animation: fall 11s linear infinite, sway2 3s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.drop li:nth-child(7) {
+    left: 65%;
+    top: -40px;
+    width: 13px;
+    height: 13px;
+    animation: fall 7s linear infinite,
+        sway2 3.5s ease-in-out infinite alternate;
+    animation-delay: 7s;
+}
+.drop li:nth-child(8) {
+    left: 50%;
+    top: -60px;
+    width: 9px;
+    height: 9px;
+    background-color: #e5f0f9;
+    animation: fall 7s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 3s;
+}
+.drop li:nth-child(9) {
+    left: 80%;
+    top: -70px;
+    width: 20px;
+    height: 20px;
+    animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
+    animation-delay: 4s;
 }
 
 /*--------------------------------
@@ -885,13 +1069,24 @@ works_06.html
 
 /*--------------------------------
 
-428px以下のとき
+レスポンシブ (スマホページ)
 ---------------------------------*/
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
+    .pc_title-h6 img {
+        width: 50%;
+        height: auto;
+    }
     .header_nav {
         display: none;
     }
 
+    .footer_box ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
     /* TITLE */
     .pc_title-h1 img,
     .pc_title-h6 img,
@@ -901,30 +1096,29 @@ works_06.html
     }
 
     .pc_title-h1 img {
+        max-width: 434px;
+        width: 100%;
         margin-top: 275px;
-        width: 287px;
-        height: 46px;
     }
 
     .pc_title-h6 img {
         max-width: 163px;
-        height: 49px;
         margin-top: 24px;
     }
     .pc_title-umbrella img {
         margin-top: 127px;
         width: 68px;
-        height: 61px;
         margin-bottom: 150px;
     }
     /* ページ内リンク */
     #page-top img {
         width: 48px;
-        height: 106px;
-        margin-top: 60px;
-        margin-left: 40px;
     }
 
+    #page-top {
+        right: -35px;
+        bottom: -100px;
+    }
     /* WORKS */
     .pc_works img {
         width: 197px;
@@ -952,7 +1146,6 @@ works_06.html
     .WORKS ul {
         display: block;
         margin: 0 auto;
-        max-width: 315px;
         width: 100%;
         height: auto;
     }
@@ -1131,11 +1324,7 @@ works_06.html
         height: 210px;
         padding-top: 30px;
     }
-    .footer_box ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+
     .footer_box li {
         display: block;
         margin: 0 auto;
@@ -1195,6 +1384,56 @@ works.html(works一覧ページ)
     .WORKS_FOOTER .footer_box {
         margin-top: 150px;
     }
+
+    /* トップページに戻るボタン */
+    /* 角丸アイコン */
+    .pc_button_top-page {
+        width: 305px;
+        height: 45px;
+        line-height: 45px;
+        background-color: #0067c0;
+        margin: 0 auto;
+        margin-top: 100px;
+        /* 角丸 */
+        border-radius: 27px;
+        margin-bottom: 205px;
+    }
+
+    /* テキスト */
+    .pc_button_top-page a {
+        display: block;
+        text-align: center;
+        justify-content: space-around;
+        font-size: 21px;
+        color: #ffffff;
+
+        font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
+            "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
+            "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
+            "MS Gothic", "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+        position: relative;
+    }
+    /* 矢印 */
+    .pc_button_top-page a::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(45deg);
+        left: 14px;
+        top: 25px;
+    }
+    .pc_button_top-page a::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        background-color: #ffffff;
+        transform: rotate(-45deg);
+        left: 14px;
+        top: 19px;
+    }
 }
 
 /*--------------------------------
@@ -1212,7 +1451,7 @@ pc_works_01.html(課題詳細ページ)
 
     .pc_works_mobile th {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
@@ -1221,13 +1460,13 @@ pc_works_01.html(課題詳細ページ)
     .td_left {
         display: block;
         width: 25%;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: bold;
     }
     .td_right {
         display: block;
         width: 75%;
-        font-size: 11px;
+        font-size: 15px;
         font-weight: 300;
     }
 
@@ -1356,8 +1595,7 @@ pc_works_02.html(課題詳細ページ)
 
     .pc_works_travel th {
         text-align: left;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 20px;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
     }
@@ -1385,7 +1623,7 @@ pc_works_03.html(課題詳細ページ)
 
     .pc_works_hamburger th {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
@@ -1418,7 +1656,7 @@ pc_works_04.html(課題詳細ページ)
 
     .pc_works_coworking th {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
@@ -1437,7 +1675,7 @@ pc_works_04.html(課題詳細ページ)
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
-        margin-left: 50px;
+        margin-left: 20px;
     }
 }
 /*--------------------------------
@@ -1455,7 +1693,7 @@ pc_works_05.html(課題詳細ページ)
 
     .pc_works_hairsalon th {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
@@ -1484,7 +1722,7 @@ pc_works_06.html(課題詳細ページ)
 
     .pc_works_designcafe th {
         text-align: left;
-        font-size: 16px;
+        font-size: 20px;
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
@@ -1503,6 +1741,92 @@ pc_works_06.html(課題詳細ページ)
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
-        margin-left: 50px;
+        margin-left: 20px;
+    }
+}
+
+/* 767px以下のとき
+ハンバーガーメニュー */
+
+@media screen and (max-width: 767px) {
+    .sp_nav {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(15, 112, 195);
+    }
+
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sp_nav li {
+        padding: 20px;
+        font-size: 38px;
+        font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
+            "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+            "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+            "ＭＳ Ｐゴシック", sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+
+    .header_nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        height: 30px;
+        width: 33px;
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+        top: 0;
+    }
+
+    /* ハンバーガーメニュー */
+    .hamburger span {
+        width: 33px;
+        height: 3px;
+        background-color: #1c4684;
+        position: absolute;
+        content: "";
+        top: 20px;
+        right: 10px;
+        z-index: 9999;
+        transition: 1s;
+    }
+
+    .hamburger span::before,
+    .hamburger span::after {
+        position: absolute;
+        content: "";
+        width: 33px;
+        height: 3px;
+        background-color: #1c4684;
+        transition: 1s;
+    }
+    .hamburger span::before {
+        top: -10px;
+    }
+    .hamburger span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .open span::after {
+        transform: rotate(-45deg);
+        top: 0;
     }
 }
