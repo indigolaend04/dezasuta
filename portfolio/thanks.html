@@ -15,9 +15,24 @@
     let submitted = false;
 </script>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
-    onload="if(submitted){window.location='THANKSページのURL';}"></iframe>
+    onload="if(submitted){window.location='./thanks-page.html';}"></iframe>
 
 <body>
+    <section class="thanks-page">
+        <h1>
+            お問い合わせ　送信完了
+        </h1>
+        <p>
+            お問い合わせありがとうございます。
+            ご記入していただいた情報は無事に送信されました。
+        </p>
+        <div class="pc_button_top-page">
+            <a href="./index.html">
+                TOPに戻る
+            </a>
+        </div>
+
+    </section>
 
     <form
         action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSe00eJN0CWayVTtmGW0ONrc6MT8bA5no3F9iHgbGwaOm18KRw/formResponse"

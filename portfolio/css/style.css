@@ -1041,6 +1041,28 @@ html {
 }
 
 /*--------------------------------
+お問い合わせ完了ページ
+(コンタクトフォーム送信したあと)
+thanks.html
+---------------------------------*/
+.thanks-page h1,
+.thanks-page p {
+    font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
+}
+
+.thanks-page h1 {
+    font-size: 40px;
+    color: #0067c0;
+}
+.thanks-page p {
+    font-size: 20px;
+    color: #0a1014;
+}
+
+/*--------------------------------
 767px以下のとき
 ---------------------------------*/
 @media screen and (max-width: 767px) {
