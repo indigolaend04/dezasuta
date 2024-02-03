@@ -9,6 +9,10 @@ body {
 index.html
 ---------------------------------*/
 /* ヘッダー */
+.sp_nav {
+    display: none;
+}
+
 .header_nav ul {
     display: flex;
     justify-content: center;
@@ -44,13 +48,13 @@ index.html
 
 .pc_title-h1 img {
     width: 434px;
-    height: 70px;
     margin-top: 350px;
+    padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .pc_title-h6 img {
     width: 614px;
-    height: 36px;
     margin-top: 7px;
 }
 
@@ -77,13 +81,12 @@ index.html
     font-size: 18px;
     text-align: center;
     color: #0a1014;
-
     font-weight: 500;
     font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
         "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
         "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
         "ＭＳ Ｐゴシック", sans-serif;
-    padding: 50px 67px;
+    padding: 16px;
 }
 .WORKS ul {
     display: flex;
@@ -278,6 +281,11 @@ textarea.c-form__input {
     height: 160px;
 }
 
+.c-form__label {
+    /* color: #0a1014; */
+    font-weight: bold;
+}
+
 @media (min-width: 640px) {
     .c-form__item {
         flex-wrap: nowrap;
@@ -379,7 +387,7 @@ textarea.c-form__input {
     height: 227px;
     position: fixed;
     right: 20px;
-    bottom: 50px;
+    bottom: 125px;
     padding: 10px;
     z-index: 1;
 }
@@ -410,6 +418,7 @@ works.html
 
 .pc_works_wrap p {
     font-size: 15px;
+    text-align: start;
 }
 
 .pc_works_wrap span {
@@ -810,13 +819,14 @@ works_04.html
     max-width: 250px;
     width: 100%;
     height: auto;
-    margin: 165px 0 212px 50px;
+    margin: 165px 0 212px 0;
     border: solid 1px;
 }
 
 .coworking_lp {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 /*--------------------------------
@@ -915,13 +925,14 @@ works_06.html
     max-width: 250px;
     width: 100%;
     height: auto;
-    margin: 86px 0 212px 80px;
+    margin: 86px 0 212px 0;
     border: solid 1px;
 }
 
 .designcafe_lp {
     display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
 /* 雨粒のアニメーション */
@@ -931,7 +942,7 @@ html {
 }
 
 .drop {
-    position: absolute;
+    position: fixed;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -939,6 +950,8 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
+    top: -100px;
 }
 
 .drop li {
@@ -946,7 +959,7 @@ html {
     list-style: none;
     top: -50px;
     background: #e5f0f9;
-    transform: rotate(133deg);
+    transform: rotate(133deg) /* skew(-10deg, -10deg) */;
     border-radius: 52% 48% 100% 0% / 100% 50% 50% 0%;
 }
 
@@ -1045,6 +1058,10 @@ html {
 (コンタクトフォーム送信したあと)
 thanks.html
 ---------------------------------*/
+.thanks-page {
+    padding: 50px;
+    text-align: center;
+}
 .thanks-page h1,
 .thanks-page p {
     font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
@@ -1056,10 +1073,14 @@ thanks.html
 .thanks-page h1 {
     font-size: 40px;
     color: #0067c0;
+    margin-top: 140px;
+    margin-bottom: 60px;
 }
 .thanks-page p {
+    font-weight: 500;
     font-size: 20px;
     color: #0a1014;
+    line-height: 1.5;
 }
 
 /*--------------------------------
@@ -1107,6 +1128,29 @@ thanks.html
         flex-direction: column;
         gap: 20px;
     }
+
+    .FOOTER {
+        margin-top: 143px;
+    }
+    .footer_box {
+        background-color: #1c4684;
+        width: 100%;
+        height: 210px;
+        padding-top: 30px;
+    }
+
+    .footer_box li {
+        display: block;
+        margin: 0 auto;
+        font-size: 18px;
+    }
+
+    .footer_box p {
+        font-size: 12px;
+    }
+    .copyright {
+        padding-bottom: 20px;
+    }
 }
 @media screen and (max-width: 600px) {
     /* TITLE */
@@ -1139,7 +1183,7 @@ thanks.html
 
     #page-top {
         right: -35px;
-        bottom: -100px;
+        bottom: 110px;
     }
     /* WORKS */
     .pc_works img {
@@ -1151,8 +1195,7 @@ thanks.html
     }
 
     .WORKS p {
-        padding: 0 32px;
-        text-align: start;
+        padding: 0 48px;
         line-height: 1.6;
         font-size: 16px;
         color: #1c4684;
@@ -1335,29 +1378,6 @@ thanks.html
         transform: rotate(45deg);
         right: 25px;
         top: 20px;
-    }
-
-    .FOOTER {
-        margin-top: 143px;
-    }
-    .footer_box {
-        background-color: #1c4684;
-        width: 100%;
-        height: 210px;
-        padding-top: 30px;
-    }
-
-    .footer_box li {
-        display: block;
-        margin: 0 auto;
-        font-size: 18px;
-    }
-
-    .footer_box p {
-        font-size: 12px;
-    }
-    .copyright {
-        padding-bottom: 20px;
     }
 }
 
@@ -1697,7 +1717,6 @@ pc_works_04.html(課題詳細ページ)
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
-        margin-left: 20px;
     }
 }
 /*--------------------------------
@@ -1763,7 +1782,32 @@ pc_works_06.html(課題詳細ページ)
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
-        margin-left: 20px;
+    }
+}
+
+/*--------------------------------
+お問い合わせ完了ページ
+(コンタクトフォーム送信したあと)
+thanks.html
+---------------------------------*/
+@media screen and (max-width: 600px) {
+    .thanks-page {
+        padding: 0 16px;
+        text-align: center;
+    }
+    .thanks-page h1,
+    .thanks-page p {
+        font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
+            "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+            "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+            "ＭＳ Ｐゴシック", sans-serif;
+    }
+
+    .thanks-page h1 {
+        font-size: 20px;
+    }
+    .thanks-page p {
+        font-size: 14px;
     }
 }
 
@@ -1772,10 +1816,13 @@ pc_works_06.html(課題詳細ページ)
 
 @media screen and (max-width: 767px) {
     .sp_nav {
+        display: none;
         position: absolute;
         width: 100%;
         height: 100vh;
         background-color: rgb(15, 112, 195);
+        top: 0;
+        left: 0;
     }
 
     .sp_nav ul {
@@ -1787,7 +1834,7 @@ pc_works_06.html(課題詳細ページ)
 
     .sp_nav li {
         padding: 20px;
-        font-size: 38px;
+        font-size: 20px;
         font-family: "Altivo", "游ゴシック", "YuGothic", "游ゴシック Medium",
             "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
             "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
@@ -1846,9 +1893,11 @@ pc_works_06.html(課題詳細ページ)
     .open span::before {
         transform: rotate(45deg);
         top: 0;
+        background-color: #ffffff;
     }
     .open span::after {
         transform: rotate(-45deg);
         top: 0;
+        background-color: #ffffff;
     }
 }

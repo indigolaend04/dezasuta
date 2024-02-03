@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AYUMI PORTFOLIO</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <!-- ページ内リンク -->
@@ -16,6 +18,19 @@
 </a>
 
 <body>
+
+    <!-- 雨粒 -->
+    <ul class="drop">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
     <header>
         <nav class="header_nav">
@@ -26,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #WORKS">
+                    <a href="./works.html">
                         WORKS
                     </a>
                 </li>
@@ -42,6 +57,34 @@
                 </li>
             </ul>
         </nav>
+        <div class="hamburger"><span></span></div>
+        <nuv class="sp_nav">
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="./works.html">
+                        WORKS
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html #ABOUT">
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html #CONTACT">
+                        CONTACT
+                    </a>
+                </li>
+
+            </ul>
+
+        </nuv>
+
     </header>
 
     <section class="pc_works_02">
@@ -111,7 +154,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #WORKS">
+                    <a href="./works.html">
                         WORKS
                     </a>
                 </li>
@@ -133,5 +176,22 @@
 
     </div>
 </footer>
+
+<!-- 以下 jQueryの記述 -->
+<script>
+
+    $(function () {
+        // ハンバーガーメニュー
+        $(function () {
+            $('.hamburger').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.hamburger').toggleClass('open');
+
+
+            });
+        });
+    });
+
+</script>
 
 </html>

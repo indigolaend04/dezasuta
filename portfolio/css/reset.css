@@ -17,9 +17,10 @@ dl {
     padding: 0;
     line-height: 1;
     color: #4f260b;
-    font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-        "ＭＳ 明朝", serif;
+    font-family: "游ゴシック", "YuGothic", "游ゴシック Medium",
+        "Yu GothicMedium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+        "メイリオ", "Meiryo", "ＭＳ ゴシック", "MS Gothic", "MS PGothic",
+        "ＭＳ Ｐゴシック", sans-serif;
     font-feature-settings: "palt";
     box-sizing: border-box;
 }
