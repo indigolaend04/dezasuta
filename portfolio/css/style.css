@@ -1123,7 +1123,8 @@ thanks.html
 レスポンシブ (スマホページ)
 ---------------------------------*/
 @media screen and (max-width: 767px) {
-    .header_nav {
+    .header_nav,
+    #page-top {
         display: none;
     }
 
@@ -1182,14 +1183,14 @@ thanks.html
         margin-bottom: 150px;
     }
     /* ページ内リンク */
-    #page-top img {
+    /* #page-top img {
         width: 48px;
     }
 
     #page-top {
         right: -35px;
         bottom: 110px;
-    }
+    } */
     /* WORKS */
     .pc_works img {
         width: 197px;
