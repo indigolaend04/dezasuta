@@ -47,12 +47,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #ABOUT">
+                    <a href="#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #CONTACT">
+                    <a href="#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -60,7 +60,7 @@
         </nav>
 
         <div class="hamburger"><span></span></div>
-        <nuv class="sp_nav">
+        <nav class="sp_nav">
             <ul>
                 <li>
                     <a href="./index.html">
@@ -73,19 +73,19 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #ABOUT">
+                    <a href="#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html #CONTACT">
+                    <a href="#CONTACT">
                         CONTACT
                     </a>
                 </li>
 
             </ul>
 
-        </nuv>
+        </nav>
     </header>
 
     <section class="WORKS">
@@ -162,55 +162,58 @@
         </div>
     </section>
 
-</body>
 
-<footer>
-    <div class="WORKS_FOOTER">
 
-        <div class="footer_box">
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="./works.html">
-                        WORKS
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html #ABOUT">
-                        ABOUT
-                    </a>
-                </li>
-                <li>
-                    <a href="./index.html #CONTACT">
-                        CONTACT
-                    </a>
-                </li>
-            </ul>
-            <p class="copyright">
-                ©AYUMI.M 2023
-            </p>
+    <footer>
+        <div class="WORKS_FOOTER">
+
+            <div class="footer_box">
+                <ul>
+                    <li>
+                        <a href="./index.html">
+                            HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./works.html">
+                            WORKS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#ABOUT">
+                            ABOUT
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#CONTACT">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    ©AYUMI.M 2023
+                </p>
+            </div>
+
         </div>
+    </footer>
+    <script>
 
-    </div>
-</footer>
-<script>
-
-    $(function () {
-        // ハンバーガーメニュー
         $(function () {
-            $('.hamburger').on('click', function () {
-                $('.sp_nav').fadeToggle();
-                $('.hamburger').toggleClass('open');
-
-
+            // ハンバーガーメニュー
+            $(function () {
+                $('.hamburger').on('click', function () {
+                    $('.sp_nav').fadeToggle();
+                    $('.hamburger').toggleClass('open');
+                });
+                $(".sp_nav").click(function () {
+                    $('.sp_nav').fadeToggle();
+                    $("hamburger").removeClass("open");
+                });
             });
         });
-    });
 
-</script>
+    </script>
+</body>
 
 </html>
