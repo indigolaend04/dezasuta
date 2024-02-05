@@ -401,14 +401,15 @@ textarea.c-form__input {
 2ページ目（WORKSの一覧ページ）
 works.html
 ---------------------------------*/
-
+/* .pc_works_list img {
+    display: none;
+} */
 .pc_works_list img {
     width: 377px;
-    height: 78px;
     display: block;
     margin: 0 auto;
-    margin-top: 131px;
-    margin-bottom: 112px;
+    margin-top: 158px;
+    margin-bottom: 137px;
 }
 .pc_works_wrap {
     display: flex;
@@ -419,6 +420,7 @@ works.html
     width: calc(90% / 2);
     text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .pc_works_wrap p {
@@ -492,6 +494,25 @@ works.html
     transform: rotate(-45deg);
     left: 14px;
     top: 24px;
+}
+
+.works_01 {
+    order: 4;
+}
+.works_02 {
+    order: 2;
+}
+.works_03 {
+    order: 6;
+}
+.works_04 {
+    order: 1;
+}
+.works_05 {
+    order: 5;
+}
+.works_06 {
+    order: 3;
 }
 
 /*--------------------------------
@@ -836,7 +857,7 @@ works_04.html
 .coworking_lp {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 /*--------------------------------
@@ -875,7 +896,7 @@ works_05.html
 }
 
 .hairsalon_lp img {
-    max-width: 800px;
+    max-width: 850px;
     width: 100%;
     height: auto;
     display: block;
@@ -942,11 +963,11 @@ works_06.html
 .designcafe_lp {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 /* 雨粒のアニメーション */
-/* 
+
 html {
     width: 100%;
 }
@@ -971,8 +992,8 @@ html {
     background: #e5f0f9;
     transform: rotate(133deg);
     border-radius: 52% 48% 100% 0% / 100% 50% 50% 0%;
-} */
-/* 
+}
+
 @keyframes fall {
     to {
         top: 120%;
@@ -1061,7 +1082,7 @@ html {
     height: 20px;
     animation: fall 10s linear infinite, sway2 4s ease-in-out infinite alternate;
     animation-delay: 4s;
-} */
+}
 
 /*--------------------------------
 お問い合わせ完了ページ
@@ -1161,8 +1182,7 @@ thanks.html
     .copyright {
         padding-bottom: 20px;
     }
-}
-@media screen and (max-width: 767px) {
+
     /* TITLE */
     .pc_title-h1 img,
     .pc_title-h6 img,
@@ -1178,8 +1198,8 @@ thanks.html
     }
 
     .pc_title-h6 img {
-        width: 60%;
-        height: auto;
+        max-width: 260px;
+        width: 100%;
         margin-top: 24px;
     }
     .pc_title-umbrella img {
@@ -1187,15 +1207,7 @@ thanks.html
         width: 68px;
         margin-bottom: 150px;
     }
-    /* ページ内リンク */
-    /* #page-top img {
-        width: 48px;
-    }
 
-    #page-top {
-        right: -35px;
-        bottom: 110px;
-    } */
     /* WORKS */
     .pc_works img {
         width: 197px;
@@ -1247,7 +1259,7 @@ thanks.html
         display: block;
         text-align: center;
         justify-content: space-around;
-        font-size: 24px;
+        font-size: 21px;
         color: #ffffff;
         font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
             "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
@@ -1396,6 +1408,7 @@ thanks.html
 767px以下のとき
 works.html(works一覧ページ)
 ---------------------------------*/
+
 @media screen and (max-width: 767px) {
     .pc_works_list img {
         width: 197px;
@@ -1414,7 +1427,6 @@ works.html(works一覧ページ)
     }
 
     .pc_works_wrap > div {
-        padding: 0;
         width: 100%;
     }
 
@@ -1428,6 +1440,7 @@ works.html(works一覧ページ)
     }
     .pc_works_wrap p {
         font-size: 16px;
+        padding: 0 10px;
     }
     .pc_works_wrap span {
         font-size: 12px;
@@ -1701,7 +1714,7 @@ pc_works_04.html(課題詳細ページ)
 ---------------------------------*/
 @media screen and (max-width: 767px) {
     .pc_works_04 img {
-        max-width: 315px;
+        /* max-width: 315px; */
         width: 100%;
         height: auto;
         margin-top: 220px;
@@ -1717,14 +1730,14 @@ pc_works_04.html(課題詳細ページ)
     }
 
     .coworking_lp_pc img {
-        max-width: 170px;
+        max-width: 430px;
         width: 100%;
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
     }
     .coworking_lp_sp img {
-        max-width: 150px;
+        max-width: 230px;
         width: 100%;
         height: auto;
         margin-top: 80px;
@@ -1738,7 +1751,7 @@ pc_works_05.html(課題詳細ページ)
 ---------------------------------*/
 @media screen and (max-width: 767px) {
     .pc_works_05 img {
-        max-width: 315px;
+        /* max-width: 315px; */
         width: 100%;
         height: auto;
         margin-top: 220px;
@@ -1782,18 +1795,42 @@ pc_works_06.html(課題詳細ページ)
     }
 
     .designcafe_lp_pc img {
-        max-width: 170px;
+        max-width: 430px;
         width: 100%;
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
     }
     .designcafe_lp_sp img {
-        max-width: 150px;
+        max-width: 230px;
         width: 100%;
         height: auto;
         margin-top: 80px;
         margin-bottom: 0;
+    }
+}
+
+/* sp版（767px以下のとき）
+並び順変更 */
+
+@media screen and (max-width: 767px) {
+    .works_01 {
+        order: 1;
+    }
+    .works_02 {
+        order: 2;
+    }
+    .works_03 {
+        order: 3;
+    }
+    .works_04 {
+        order: 4;
+    }
+    .works_05 {
+        order: 5;
+    }
+    .works_06 {
+        order: 6;
     }
 }
 
@@ -1836,7 +1873,6 @@ thanks.html
 
 /* 767px以下のとき
 ハンバーガーメニュー */
-
 @media screen and (max-width: 767px) {
     .sp_nav {
         display: none;

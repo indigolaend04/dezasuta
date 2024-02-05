@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOS.js cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <!-- ページ内リンク -->
 <a href="#" id="page-top">
-    <img src="./images/to_top@3x.png">
+    <div data-aos="fade" data-aos-offset="2000" data-aos-anchor-placement="bottom-top">
+        <img src="./images/to_top@3x.png">
+    </div>
 </a>
 
 <body>
@@ -47,12 +53,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#ABOUT">
+                    <a href="./index.html#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="#CONTACT">
+                    <a href="./index.html#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -73,12 +79,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#ABOUT">
+                    <a href="./index.html#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="#CONTACT">
+                    <a href="./index.html#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -90,8 +96,9 @@
     </header>
 
     <section class="pc_works_01">
-        <img src="./images/works_01_mockup.png" alt="バナーデザイン課題のモックアップ画像">
-
+        <div data-aos-delay="300" data-aos="fade-up">
+            <img src="./images/works_01_mockup.png" alt="バナーデザイン課題のモックアップ画像">
+        </div>
         <table class="pc_works_mobile">
             <tr>
                 <th>
@@ -159,12 +166,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#ABOUT">
+                        <a href="./index.html#ABOUT">
                             ABOUT
                         </a>
                     </li>
                     <li>
-                        <a href="#CONTACT">
+                        <a href="./index.html#CONTACT">
                             CONTACT
                         </a>
                     </li>
@@ -189,10 +196,12 @@
                 });
                 $(".sp_nav").click(function () {
                     $('.sp_nav').fadeToggle();
-                    $("hamburger").removeClass("open");
+                    $(".hamburger").removeClass("open");
                 });
             });
         });
+
+        AOS.init();
 
     </script>
 </body>

@@ -19,13 +19,15 @@
 
 <!-- ページ内リンク -->
 <a href="#" id="page-top">
-    <img src="./images/to_top@3x.png">
+    <div data-aos="fade" data-aos-offset="500" data-aos-anchor-placement="bottom-top">
+        <img src="./images/to_top@3x.png">
+    </div>
 </a>
 
 <body>
 
     <!-- 雨粒 -->
-    <ul class="drop">
+    <!-- <ul class="drop">
         <li></li>
         <li></li>
         <li></li>
@@ -35,7 +37,7 @@
         <li></li>
         <li></li>
         <li></li>
-    </ul>
+    </ul> -->
 
     <header>
         <nav class="header_nav">
@@ -77,12 +79,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#ABOUT">
+                    <a href="./index.html#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="#CONTACT">
+                    <a href="./index.html#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -100,7 +102,7 @@
         <div class="pc_works_wrap">
 
             <div class="works_04">
-                <div data-aos-delay="400" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_04.html">
                         <img src="./images/works_04_mockup.png" alt="">
                     </a>
@@ -112,7 +114,7 @@
             </div>
 
             <div class="works_02">
-                <div data-aos-delay="420" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_02.html">
                         <img src="./images/works_02_mockup.png" alt="">
                     </a>
@@ -123,7 +125,7 @@
             </div>
 
             <div class="works_06">
-                <div data-aos-delay="440" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_06.html">
                         <img src="./images/works_06_mockup.png" alt="">
                     </a>
@@ -135,7 +137,7 @@
             </div>
 
             <div class="works_01">
-                <div data-aos-delay="460" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_01.html">
                         <img src="./images/works_01_mockup.png" alt="">
                     </a>
@@ -147,7 +149,7 @@
             </div>
 
             <div class="works_05">
-                <div data-aos-delay="480" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_05.html">
                         <img src="./images/works_05_mockup.png" alt="">
                     </a>
@@ -159,7 +161,7 @@
             </div>
 
             <div class="works_03">
-                <div data-aos-delay="480" data-aos="fade-up">
+                <div data-aos-delay="300" data-aos="fade-up">
                     <a href="./works_03.html">
                         <img src="./images/works_03_mockup.png" alt="">
                     </a>
@@ -169,13 +171,14 @@
                 </div>
             </div>
 
-            <div class="pc_button_top-page">
-                <a href="./index.html">
-                    トップページに戻る
-                </a>
-            </div>
-
         </div>
+
+        <div class="pc_button_top-page">
+            <a href="./index.html">
+                トップページに戻る
+            </a>
+        </div>
+
     </section>
 
 
@@ -196,12 +199,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#ABOUT">
+                        <a href="./index.html#ABOUT">
                             ABOUT
                         </a>
                     </li>
                     <li>
-                        <a href="#CONTACT">
+                        <a href="./index.html#CONTACT">
                             CONTACT
                         </a>
                     </li>
@@ -224,7 +227,7 @@
                 });
                 $(".sp_nav").click(function () {
                     $('.sp_nav').fadeToggle();
-                    $("hamburger").removeClass("open");
+                    $(".hamburger").removeClass("open");
                 });
             });
         });
