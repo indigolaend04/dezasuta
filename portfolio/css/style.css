@@ -1829,7 +1829,7 @@ thanks.html
         background-color: rgb(15, 112, 195);
         top: 0;
         left: 0;
-        z-index: 9999;
+        z-index: 9998;
     }
 
     .sp_nav ul {
