@@ -1169,7 +1169,7 @@ thanks.html
     .pc_title-h1 img {
         max-width: 434px;
         width: 100%;
-        margin-top: 275px;
+        margin-top: 250px;
     }
 
     .pc_title-h6 img {
@@ -1178,7 +1178,7 @@ thanks.html
         margin-top: 24px;
     }
     .pc_title-umbrella img {
-        margin-top: 127px;
+        margin-top: 65px;
         width: 68px;
         margin-bottom: 150px;
     }
@@ -1829,7 +1829,7 @@ thanks.html
         background-color: rgb(15, 112, 195);
         top: 0;
         left: 0;
-        z-index: 9998;
+        z-index: 9990;
     }
 
     .sp_nav ul {
