@@ -172,16 +172,19 @@ index.html
         "ＭＳ Ｐゴシック", sans-serif;
 }
 
+.pc_profile_name ruby,
+.pc_profile_name h2 {
+    color: #3b4952;
+}
+
 .pc_profile_name ruby {
     font-size: 30px;
     font-weight: bold;
-    color: #0a1014;
 }
 .pc_profile_name h2 {
     line-height: 1.2;
     padding-top: 30px;
     font-size: 58px;
-    color: #0a1014;
 }
 .pc_profile_text {
     line-height: 1.7;
@@ -1090,7 +1093,9 @@ thanks.html
     line-height: 1.5;
 }
 .thanks-page img {
-    z-index: -1;
+    width: 80px;
+    margin-top: 185px;
+    margin-left: 400px;
 }
 
 /*--------------------------------
@@ -1403,17 +1408,19 @@ works.html(works一覧ページ)
     }
 
     .pc_works_wrap img {
-        max-width: 315px;
+        /* max-width: 315px; */
         width: 100%;
         height: auto;
     }
 
     .pc_works_wrap > div {
+        padding: 0;
         width: 100%;
     }
 
     .pc_works_wrap p,
     .pc_works_wrap span {
+        color: #1c4684;
         font-family: "平成丸ゴシック Std", "游ゴシック", "YuGothic",
             "游ゴシック Medium", "Yu GothicMedium", "ヒラギノ角ゴ Pro",
             "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "ＭＳ ゴシック",
@@ -1491,9 +1498,7 @@ pc_works_01.html(課題詳細ページ)
 ---------------------------------*/
 @media screen and (max-width: 767px) {
     .pc_works_01 img {
-        max-width: 315px;
-        width: 100%;
-        height: auto;
+        max-width: 100%;
         margin-top: 220px;
     }
 
@@ -1708,6 +1713,7 @@ pc_works_04.html(課題詳細ページ)
         font-weight: bold;
         border-top: solid 1px #0067c0;
         padding: 15px 0;
+        line-height: 1.3;
     }
 
     .coworking_lp_pc img {
@@ -1798,7 +1804,7 @@ thanks.html
 ---------------------------------*/
 @media screen and (max-width: 767px) {
     .thanks-page {
-        padding: 0 16px;
+        padding: 34px 16px;
         text-align: center;
     }
     .thanks-page h1,
@@ -1811,9 +1817,20 @@ thanks.html
 
     .thanks-page h1 {
         font-size: 20px;
+        margin-top: 170px;
+        margin-bottom: 25px;
     }
     .thanks-page p {
         font-size: 14px;
+    }
+    .thanks-page img {
+        width: 65px;
+        margin-top: 100px;
+        margin-left: 230px;
+        padding: 16px;
+    }
+    .thanks-page .pc_button_top-page {
+        margin-top: 50px;
     }
 }
 
@@ -1934,7 +1951,7 @@ thanks.html
         list-style: none;
         top: -50px;
         background: #e5f0f9;
-        transform: rotate(133deg) /* skew(-10deg, -10deg) */;
+        transform: rotate(133deg);
         border-radius: 52% 48% 100% 0% / 100% 50% 50% 0%;
     }
 

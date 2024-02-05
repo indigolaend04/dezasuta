@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOS.js cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -47,12 +51,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#ABOUT">
+                    <a href="./index.html#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="#CONTACT">
+                    <a href="./index.html#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -93,72 +97,84 @@
             <img src="./images/works@2x.png" alt="フォントの画像">
         </div>
 
-
         <div class="pc_works_wrap">
 
             <div class="works_04">
-                <a href="./works_04.html">
-                    <img src="./images/works_04_mockup.png" alt="">
-                </a>
-                <p>
-                    架空のコワーキングスペース「WOKERS」<br>
-                    <span>LP design</span>
-                </p>
+                <div data-aos-delay="400" data-aos="fade-up">
+                    <a href="./works_04.html">
+                        <img src="./images/works_04_mockup.png" alt="">
+                    </a>
+                    <p>
+                        架空のコワーキングスペース<br>「WOKERS」<br>
+                        <span>LP design</span>
+                    </p>
+                </div>
             </div>
 
             <div class="works_02">
-                <a href="./works_02.html">
-                    <img src="./images/works_02_mockup.png" alt="">
-                </a>
-                <p>旅行メディアのアプリ版広告<br>
-                    <span>banner design</span>
-                </p>
+                <div data-aos-delay="420" data-aos="fade-up">
+                    <a href="./works_02.html">
+                        <img src="./images/works_02_mockup.png" alt="">
+                    </a>
+                    <p>旅行メディアのアプリ版広告<br>
+                        <span>banner design</span>
+                    </p>
+                </div>
             </div>
 
             <div class="works_06">
-                <a href="./works_06.html">
-                    <img src="./images/works_06_mockup.png" alt="">
-                </a>
-                <p>
-                    デザインカフェ　ホームページ<br>
-                    <span>coding</span>
-                </p>
+                <div data-aos-delay="440" data-aos="fade-up">
+                    <a href="./works_06.html">
+                        <img src="./images/works_06_mockup.png" alt="">
+                    </a>
+                    <p>
+                        デザインカフェ　ホームページ<br>
+                        <span>coding</span>
+                    </p>
+                </div>
             </div>
 
             <div class="works_01">
-                <a href="./works_01.html">
-                    <img src="./images/works_01_mockup.png" alt="">
-                </a>
-                <p>
-                    デザスタmobile<br>学割プランバナーデザイン<br>
-                    <span>banner design</span>
-                </p>
+                <div data-aos-delay="460" data-aos="fade-up">
+                    <a href="./works_01.html">
+                        <img src="./images/works_01_mockup.png" alt="">
+                    </a>
+                    <p>
+                        デザスタmobile<br>学割プランバナーデザイン<br>
+                        <span>banner design</span>
+                    </p>
+                </div>
             </div>
 
             <div class="works_05">
-                <a href="./works_05.html">
-                    <img src="./images/works_05_mockup.png" alt="">
-                </a>
-                <p>
-                    架空のヘアサロン<br>「LIFE hair design」<br>
-                    <span>LP design</span>
-                </p>
+                <div data-aos-delay="480" data-aos="fade-up">
+                    <a href="./works_05.html">
+                        <img src="./images/works_05_mockup.png" alt="">
+                    </a>
+                    <p>
+                        架空のヘアサロン<br>「LIFE hair design」<br>
+                        <span>LP design</span>
+                    </p>
+                </div>
             </div>
 
             <div class="works_03">
-                <a href="./works_03.html">
-                    <img src="./images/works_03_mockup.png" alt="">
-                </a>
-                <p>
-                    架空のハンバーガー店<br>新メニュー「激旨バーガー」<br><span>banner design</span>
-                </p>
+                <div data-aos-delay="480" data-aos="fade-up">
+                    <a href="./works_03.html">
+                        <img src="./images/works_03_mockup.png" alt="">
+                    </a>
+                    <p>
+                        架空のハンバーガー店<br>新メニュー「激旨バーガー」<br><span>banner design</span>
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="pc_button_top-page">
-            <a href="./index.html">
-                トップページに戻る
-            </a>
+            <div class="pc_button_top-page">
+                <a href="./index.html">
+                    トップページに戻る
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -212,6 +228,8 @@
                 });
             });
         });
+
+        AOS.init();
 
     </script>
 </body>
