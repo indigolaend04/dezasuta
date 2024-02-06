@@ -989,7 +989,7 @@ html {
     list-style: none;
     top: -50px;
     background: #e5f0f9;
-    transform: rotate(133deg);
+    transform: rotate(133deg) skew(-10deg, -10deg);
     border-radius: 52% 48% 100% 0% / 100% 50% 50% 0%;
 }
 
@@ -2119,7 +2119,7 @@ thanks.html
     }
     /* 767px 以下のとき  
     雨粒  一部非表示*/
-    /* .drop li:nth-child(10), */
+    .drop li:nth-child(10),
     .drop li:nth-child(11),
     .drop li:nth-child(12) {
         display: none;
