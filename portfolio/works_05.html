@@ -19,7 +19,9 @@
 
 <!-- ページ内リンク -->
 <a href="#" id="page-top">
-    <img src="./images/to_top@3x.png">
+    <div data-aos="fade" data-aos-offset="3300" data-aos-anchor-placement="bottom-top">
+        <img src="./images/to_top@3x.png">
+    </div>
 </a>
 
 <body>
@@ -94,8 +96,10 @@
     </header>
 
     <section class="pc_works_05">
-        <img src="./images/works_05_mockup.png" alt="LPデザイン課題のモックアップ画像">
 
+        <div data-aos-delay="300" data-aos="fade-up">
+            <img src="./images/works_05_mockup.png" alt="LPデザイン課題のモックアップ画像">
+        </div>
 
         <table class="pc_works_hairsalon">
             <tr>
@@ -121,8 +125,11 @@
                     5日</td>
             </tr>
         </table>
-        <div class="hairsalon_lp">
-            <img src="./images/works_05_detail@2x.png" alt="PC版LPデザイン課題の画像">
+
+        <div data-aos-delay="300" data-aos="fade-up">
+            <div class="hairsalon_lp">
+                <img src="./images/works_05_detail@2x.png" alt="PC版LPデザイン課題の画像">
+            </div>
         </div>
 
         <div class="pc_button_back">
@@ -142,10 +149,12 @@
             制作のご依頼やご相談、ご不明な点等ございましたらお気軽にお問い合わせください。<br>
             3営業日以内にご連絡をさせていただきます。
         </p>
-        <div class="pc_button_contact">
-            <a href="./index.html #CONTACT">
-                まずは相談してみる
-            </a>
+        <div data-aos="zoom-in">
+            <div class="pc_button_contact">
+                <a href="./index.html#CONTACT">
+                    まずは相談してみる
+                </a>
+            </div>
         </div>
     </section>
 
@@ -201,9 +210,6 @@
                 });
             });
         });
-
-        // コンタクトフォーム
-        let Submitted = false;
 
         AOS.init();
 

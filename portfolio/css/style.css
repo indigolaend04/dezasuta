@@ -1084,6 +1084,36 @@ html {
     animation-delay: 4s;
 }
 
+.drop li:nth-child(10) {
+    right: 0%;
+    top: -60px;
+    width: 24px;
+    height: 24px;
+    background-color: #e5f0f9;
+    animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 5s;
+}
+
+.drop li:nth-child(11) {
+    right: 5%;
+    top: -70px;
+    width: 13px;
+    height: 13px;
+    background-color: #e5f0f9;
+    animation: fall 5s linear infinite, sway1 2s ease-in-out infinite alternate;
+    animation-delay: 9s;
+}
+
+.drop li:nth-child(12) {
+    right: 15%;
+    top: -60px;
+    width: 24px;
+    height: 24px;
+    background-color: #e5f0f9;
+    animation: fall 10s linear infinite, sway1 3s ease-in-out infinite alternate;
+    animation-delay: 7s;
+}
+
 /*--------------------------------
 お問い合わせ完了ページ
 (コンタクトフォーム送信したあと)
@@ -1965,6 +1995,12 @@ thanks.html
 /* 767px 以下のとき 
  雨粒のアニメーション */
 @media screen and (max-width: 767px) {
+    .drop li :nth-child(10),
+    .drop li :nth-child(11),
+    .drop li :nth-child(12) {
+        display: none;
+    }
+
     html {
         width: 100%;
     }
