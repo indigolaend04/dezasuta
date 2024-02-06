@@ -967,17 +967,6 @@ works_06.html
 }
 
 /* 雨粒のアニメーション */
-
-/* 767px 以下のとき 
- 雨粒のアニメーション  一部非表示*/
-@media screen and (max-width: 767px) {
-    .drop li:nth-child(10),
-    .drop li:nth-child(11),
-    .drop li:nth-child(12) {
-        display: none;
-    }
-}
-
 html {
     width: 100%;
 }
@@ -2128,7 +2117,8 @@ thanks.html
             sway2 4s ease-in-out infinite alternate;
         animation-delay: 4s;
     }
-
+    /* 767px 以下のとき  
+    雨粒  一部非表示*/
     .drop li:nth-child(10),
     .drop li:nth-child(11),
     .drop li:nth-child(12) {
