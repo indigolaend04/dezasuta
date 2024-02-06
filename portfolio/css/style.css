@@ -968,6 +968,16 @@ works_06.html
 
 /* 雨粒のアニメーション */
 
+/* 767px 以下のとき 
+ 雨粒のアニメーション  一部非表示*/
+@media screen and (max-width: 767px) {
+    .drop li:nth-child(10),
+    .drop li:nth-child(11),
+    .drop li:nth-child(12) {
+        display: none;
+    }
+}
+
 html {
     width: 100%;
 }
@@ -1996,12 +2006,6 @@ thanks.html
 /* 767px 以下のとき 
  雨粒のアニメーション */
 @media screen and (max-width: 767px) {
-    .drop li :nth-child(10),
-    .drop li :nth-child(11),
-    .drop li :nth-child(12) {
-        display: none;
-    }
-
     html {
         width: 100%;
     }
@@ -2123,5 +2127,11 @@ thanks.html
         animation: fall 10s linear infinite,
             sway2 4s ease-in-out infinite alternate;
         animation-delay: 4s;
+    }
+
+    .drop li:nth-child(10),
+    .drop li:nth-child(11),
+    .drop li:nth-child(12) {
+        display: none;
     }
 }
