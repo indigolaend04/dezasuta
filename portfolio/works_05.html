@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="./css/reset.css">
 
     <link rel="stylesheet" href="./css/style.css">
+    <!-- jQuery cdn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- AOS.js cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -193,10 +197,15 @@
                 });
                 $(".sp_nav").click(function () {
                     $('.sp_nav').fadeToggle();
-                    $("hamburger").removeClass("open");
+                    $(".hamburger").removeClass("open");
                 });
             });
         });
+
+        // コンタクトフォーム
+        let Submitted = false;
+
+        AOS.init();
 
     </script>
 </body>
