@@ -2119,7 +2119,7 @@ thanks.html
     }
     /* 767px 以下のとき  
     雨粒  一部非表示*/
-    .drop li:nth-child(10),
+    /* .drop li:nth-child(10), */
     .drop li:nth-child(11),
     .drop li:nth-child(12) {
         display: none;
