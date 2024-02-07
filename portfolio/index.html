@@ -20,7 +20,7 @@
 </head>
 
 <!-- ページ内リンク -->
-<a href="#page-top" id="page-top">
+<a href="#header" id="page-top">
     <div data-aos="fade" data-aos-offset="2250" data-aos-anchor-placement="bottom-top">
         <img src="./images/to_top@3x.png">
     </div>
@@ -44,7 +44,7 @@
         <li></li>
     </ul>
 
-    <header>
+    <header id="header">
         <nav class="header_nav">
             <ul>
                 <li>
@@ -58,12 +58,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html#ABOUT">
+                    <a href="#ABOUT">
                         ABOUT
                     </a>
                 </li>
                 <li>
-                    <a href="./index.html#CONTACT">
+                    <a href="#CONTACT">
                         CONTACT
                     </a>
                 </li>
@@ -255,12 +255,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./index.html#ABOUT">
+                        <a href="#ABOUT">
                             ABOUT
                         </a>
                     </li>
                     <li>
-                        <a href="./index.html#CONTACT">
+                        <a href="#CONTACT">
                             CONTACT
                         </a>
                     </li>
@@ -296,7 +296,7 @@
 
         //ページトップ
         $(function () {
-            $('.page-top a[href^="#"]').click(function () {
+            $('a[href^="#"]').click(function () {
                 var adjust = 0;
                 var speed = 400;
                 var href = $(this).attr("href");

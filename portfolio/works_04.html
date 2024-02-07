@@ -17,7 +17,7 @@
 </head>
 
 <!-- ページ内リンク -->
-<a href="#" id="page-top">
+<a href="#header" id="page-top">
     <div data-aos="fade" data-aos-offset="2050" data-aos-anchor-placement="bottom-top">
         <img src="./images/to_top@3x.png">
     </div>
@@ -215,6 +215,19 @@
                     $('.sp_nav').fadeToggle();
                     $(".hamburger").removeClass("open");
                 });
+            });
+        });
+
+        //ページトップ
+        $(function () {
+            $('a[href^="#"]').click(function () {
+                var adjust = 0;
+                var speed = 400;
+                var href = $(this).attr("href");
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                var position = target.offset().top + adjust;
+                $('body,html').animate({ scrollTop: position }, speed, 'swing');
+                return false;
             });
         });
 
