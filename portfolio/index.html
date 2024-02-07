@@ -297,7 +297,7 @@
         //ページトップ
         $(function () {
             $('a[href^="#"]').click(function () {
-                var adjust = -30;
+                var adjust = 0;
                 var speed = 400;
                 var href = $(this).attr("href");
                 var target = $(href == "#" || href == "" ? 'html' : href);
