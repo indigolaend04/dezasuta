@@ -1224,8 +1224,7 @@ thanks.html
     .pc_title-h1 img {
         max-width: 434px;
         width: 100%;
-        /* margin-top: 250px; */
-        margin-top: 80%;
+        margin-top: 65%;
     }
 
     .pc_title-h6 img {
@@ -1235,8 +1234,7 @@ thanks.html
     }
     .pc_title-umbrella img {
         width: 68px;
-        /* margin-top: 65px; */
-        margin-top: 230px;
+        margin-top: 190px;
         margin-bottom: 150px;
     }
 
